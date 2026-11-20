@@ -4,328 +4,399 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Young Revivalist Academy</title>
-<meta name="description" content="Where revival is born, purpose is found. Study online through four classes with live teaching, mentorship and a certificate.">
 <meta name="theme-color" content="#f7f5ef">
-<meta property="og:title" content="Young Revivalist Academy">
-<meta property="og:description" content="Christlike Character. Kingdom Competence. Apostolic Influence.">
-<meta property="og:image" content="logo.jpg">
+<meta name="color-scheme" content="light">
+<meta name="description" content="Where revival is born, purpose is found, and transformation is real.">
 <link rel="icon" href="logo.jpg">
-<link rel="preload" as="image" href="morning.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f7f5ef;--surface:#fffdf8;--tint:#edeadf;--ink:#0b1a44;--mute:#56648a;--blue:#1d4ed8;--blue-dark:#1639a8;--sky:#dbe7ff;--line:#e1dccd;--flame:#f26a1b;--ok:#dff4e8;--ok-ink:#14804f;--warn:#fff1d6;--warn-ink:#8a5200;--r:20px;--ease:cubic-bezier(.2,.7,.2,1);--serif:"Cormorant Garamond",Georgia,serif;--sans:"Plus Jakarta Sans",system-ui,sans-serif;--hero-img:url("morning.jpg")}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 1.02rem/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:clip;-webkit-tap-highlight-color:transparent}
-h1,h2,h3{font-family:var(--serif);line-height:1.02;margin:0 0 .45em;letter-spacing:-.02em;font-weight:700;text-wrap:balance}
-h1{font-size:clamp(2.6rem,7.5vw,5.8rem);font-weight:600;line-height:.96}h2{font-size:clamp(2rem,4.4vw,3.2rem);font-weight:600}h3{font-size:1.5rem}
-p{margin:0 0 1em;max-width:62ch;text-wrap:pretty}a{color:inherit}img{max-width:100%}.mute{color:var(--mute)}.small{font-size:.9rem}
-:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:8px}#app:focus{outline:none}
-.skip{position:absolute;left:1rem;top:-4rem;z-index:200;background:var(--ink);color:#fff;padding:.7rem 1rem;border-radius:10px}.skip:focus{top:1rem}
-.wrap{max-width:1160px;margin:0 auto;padding:clamp(2.6rem,6vw,5.5rem) 1.4rem}
-.center{text-align:center;margin:0 auto 2rem;max-width:60ch}.center p{margin-inline:auto}
-.surface,.card,details,.formcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:0 18px 40px -30px rgba(11,26,68,.35)}
-.glass{background:rgba(255,253,248,.78);-webkit-backdrop-filter:blur(16px) saturate(150%);backdrop-filter:blur(16px) saturate(150%);border:1px solid rgba(255,255,255,.7)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:46px;border:0;cursor:pointer;text-decoration:none;font:700 .98rem var(--sans);padding:.75rem 1.5rem;border-radius:999px;background:var(--blue);color:#fff;transition:transform .25s var(--ease),box-shadow .25s,background .25s}
-.btn:hover{background:var(--blue-dark);transform:translateY(-2px);box-shadow:0 12px 24px -12px rgba(29,78,216,.7)}
-.btn.out{background:transparent;color:var(--blue);box-shadow:inset 0 0 0 1.5px var(--blue)}.btn.out:hover{background:var(--sky)}
-.btn.light{background:#fff;color:var(--blue)}.btn.light:hover{background:var(--sky)}.btn.ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.7)}.btn.ghost:hover{background:rgba(255,255,255,.14)}
-.btn.sm{min-height:44px;padding:.5rem 1.1rem;font-size:.88rem}.btn svg{width:20px;height:20px;fill:currentColor}
-.actions{display:flex;flex-wrap:wrap;gap:.8rem}
-/* header */
-.site-head{position:relative;z-index:20;background:rgba(247,245,239,.92);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
-.site-head .wrap{display:flex;align-items:center;gap:1.5rem;padding-block:.65rem}
-.brand{display:flex;align-items:center;gap:.6rem;font:700 1.3rem/1.05 var(--serif);text-decoration:none;margin-right:auto}
-.brand img{width:44px;height:44px;object-fit:contain;mix-blend-mode:multiply}
-.mark{width:32px;height:32px;border-radius:50% 50% 50% 9px;background:var(--flame);flex:none}
-.nav{display:flex;gap:1.5rem}.nav a{position:relative;text-decoration:none;font-weight:500;padding:.3rem 0}
-.nav a:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--flame);transform:scaleX(0);transition:transform .3s var(--ease)}
-.nav a:hover:after,.nav a[aria-current=page]:after{transform:scaleX(1)}
-.head-actions{display:flex;gap:.6rem}
-/* hero */
-.hero{position:relative;overflow:hidden;display:flex;align-items:center;min-height:min(78vh,720px)}
-.hero-bg{position:absolute;inset:0;background:linear-gradient(112deg,var(--bg),#dfe8fb)}
-.hero-photo{position:absolute;inset:0;background:var(--hero-img) center/cover no-repeat;opacity:.62}
-.hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(247,245,239,.8),rgba(247,245,239,.35) 62%,rgba(247,245,239,.05)),linear-gradient(180deg,transparent 78%,var(--bg))}
-.hero .wrap{position:relative;width:100%}
-.hero-card{max-width:700px;padding:clamp(1.5rem,4vw,3rem);border-radius:30px}
-.hero h1 span{display:block}.hero h1 span+span{font-style:italic;color:var(--blue)}
-.lead{font-size:1.15rem;color:#3d4a72;margin:1.2rem 0 1.8rem}
-/* pillars band */
-.band{position:relative;overflow:hidden;color:#fff;background:var(--blue-dark)}
-.band:before{content:"";position:absolute;inset:0;background:var(--hero-img) center/cover;opacity:.3;mix-blend-mode:luminosity}
-.band .wrap{position:relative}.band-label{margin:0;opacity:.85;font-weight:500}
-.pillars{list-style:none;margin:1.4rem 0 0;padding:0}
-.pillars li{display:flex;align-items:center;gap:.5em;font:600 clamp(1.9rem,6vw,4.2rem)/1.1 var(--serif);padding:.8rem 0;border-top:1px solid rgba(255,255,255,.28)}
-.pillars li:before{content:"";flex:none;width:.34em;height:.34em;border-radius:50%;background:var(--flame)}
-.pillars li:nth-child(2){padding-left:clamp(0rem,7vw,6rem)}.pillars li:nth-child(3){padding-left:clamp(0rem,14vw,12rem)}
-.pillars li:last-child{border-bottom:1px solid rgba(255,255,255,.28)}
-/* about, team */
-.video{position:relative;aspect-ratio:16/9;max-width:880px;margin:0 auto;border-radius:24px;overflow:hidden;display:grid;place-items:center;background:linear-gradient(135deg,var(--sky),var(--bg))}
-.video video,.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.play{width:84px;height:84px;border-radius:50%;border:0;background:var(--blue);cursor:pointer;display:grid;place-items:center}.play svg{width:30px;height:30px;fill:#fff;margin-left:4px}
-.statements{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));max-width:880px;margin:1.6rem auto 0}.statements>div{padding:1.5rem}.statements p{margin:0;color:var(--mute)}
-.team{display:grid;gap:1.3rem;grid-template-columns:repeat(3,1fr)}
-.member{overflow:hidden;display:flex;flex-direction:column}
-.portrait{position:relative;aspect-ratio:4/5;display:grid;place-items:center;background:linear-gradient(160deg,var(--sky),var(--bg))}
-.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
-.portrait b{font:600 4.5rem var(--serif);color:var(--blue)}
-.member-body{padding:1.1rem 1.3rem 1.4rem}.member-body h3{margin:.5rem 0 .1rem;font-size:1.7rem}
-.tag{display:inline-block;background:var(--sky);color:var(--blue-dark);border-radius:999px;padding:.15rem .8rem;font-size:.82rem;font-weight:700}
+:root{--bg:#f7f5ef;--tint:#edeadf;--ink:#0b1a44;--mute:#56648a;--blue:#1d4ed8;--blue2:#1639a8;--sky:#dbe7ff;--line:#e1dccd;--amber:#fff1d6;--amberink:#8a5200;--green:#dff4e8;--greenink:#14804f;--r:20px;--ease:cubic-bezier(.2,.7,.2,1);--glass:rgba(255,253,248,.72)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}#app:focus{outline:none}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.02rem/1.65 "Plus Jakarta Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body:before{content:"";position:fixed;inset:-15%;z-index:-1;background:radial-gradient(38% 38% at 12% 8%,rgba(29,78,216,.16),transparent),radial-gradient(34% 34% at 92% 22%,rgba(120,160,255,.28),transparent),radial-gradient(40% 40% at 60% 96%,rgba(29,78,216,.1),transparent);animation:drift 24s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate3d(-3%,4%,0) scale(1.1)}}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;line-height:1;margin:0 0 .45em;letter-spacing:-.02em;font-weight:700}
+h1{font-size:clamp(3rem,8vw,6.2rem);font-weight:600;line-height:.95}h2{font-size:clamp(2.1rem,4.6vw,3.4rem);font-weight:600}h3{font-size:1.55rem}
+p{margin:0 0 1em;max-width:60ch}h1,h2,h3{text-wrap:balance}a{color:inherit}.mute{color:var(--mute)}.small{font-size:.9rem}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1160px;margin:0 auto;padding:clamp(3rem,7vw,6rem) 1.4rem}
+.glass,.card,details,.formcard,.mod,#chat{background:var(--glass);backdrop-filter:blur(18px) saturate(160%);-webkit-backdrop-filter:blur(18px) saturate(160%);border:1px solid rgba(255,255,255,.9);box-shadow:0 0 0 1px var(--line),0 24px 48px -28px rgba(29,78,216,.35),inset 0 1px 0 #fff}
+/* nav */
+header{position:relative;z-index:20;background:rgba(247,245,239,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+nav{max-width:1160px;margin:0 auto;display:flex;align-items:center;gap:1.2rem;padding:.75rem 1.4rem}
+.brand{display:flex;align-items:center;gap:.6rem;font:700 1.3rem "Cormorant Garamond",serif;text-decoration:none;margin-right:auto}
+.mark{width:32px;height:32px;border-radius:50% 50% 50% 9px;background:var(--blue);position:relative;flex:none}.mark:after{content:"";position:absolute;inset:9px 10px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:#fff}
+.links,.acts{display:flex;gap:1.3rem;align-items:center}.acts{gap:.6rem}
+.links a:not(.btn){text-decoration:none;font-weight:500;position:relative;padding:.25rem 0}
+.links a:not(.btn):after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--blue);transform:scaleX(0);transition:transform .3s var(--ease)}
+.links a[aria-current=page]:after,.links a:not(.btn):hover:after{transform:scaleX(1)}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:10px;padding:.45rem .8rem;font:700 .9rem inherit;cursor:pointer;color:inherit}
+.menu{display:flex;align-items:center;gap:1.3rem}
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:.5rem;border:0;cursor:pointer;text-decoration:none;font:700 .98rem "Plus Jakarta Sans",sans-serif;padding:.8rem 1.5rem;border-radius:999px;background:var(--blue);color:#fff;transition:transform .25s var(--ease),box-shadow .25s,background .25s}
+.btn:hover{background:var(--blue2);transform:translateY(-2px);box-shadow:0 12px 24px -10px rgba(29,78,216,.7)}
+.btn.out{background:transparent;color:var(--blue);box-shadow:inset 0 0 0 1.5px var(--blue)}.btn.out:hover{background:var(--sky);box-shadow:inset 0 0 0 1.5px var(--blue)}
+.btn.sm{padding:.5rem 1.1rem;font-size:.88rem}.btn.white{background:#fff;color:var(--blue)}.btn.white:hover{background:var(--sky)}
 /* icons */
-.icons{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.8rem}
-.icons a{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--surface);box-shadow:0 0 0 1px var(--line);color:var(--c);transition:.25s}
-.icons a:hover{background:var(--c);color:#fff;transform:translateY(-2px)}.icons svg{width:20px;height:20px;fill:currentColor}
-.icons.labeled{display:grid;grid-template-columns:repeat(5,auto);gap:1rem 1.4rem;justify-content:start}
-.icons.labeled a{width:auto;height:auto;border-radius:0;background:none;box-shadow:none;display:grid;justify-items:center;gap:.4rem;font-size:.8rem;font-weight:700;text-decoration:none;color:var(--ink)}
-.icons.labeled a:hover{background:none;transform:none}.ico{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--surface);box-shadow:0 0 0 1px var(--line);color:var(--c);transition:.25s}
-.icons.labeled a:hover .ico{background:var(--c);color:#fff}
-[data-n=facebook]{--c:#1877f2}[data-n=instagram]{--c:#e4405f}[data-n=youtube]{--c:#f00}[data-n=tiktok]{--c:#000}[data-n=telegram]{--c:#26a5e4}[data-n=spotify]{--c:#1db954}
-/* testimonials */
-.rail{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:.3rem}.rail::-webkit-scrollbar{display:none}
-.shot{flex:0 0 clamp(200px,24vw,260px);scroll-snap-align:start;overflow:hidden;margin:0}
-.shot img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}.shot figcaption{padding:.8rem 1rem;font-weight:700;font-size:.92rem}
-.rail-ctl{display:flex;gap:.5rem;justify-content:center;margin-top:1.2rem}
-.rail-ctl button{width:48px;height:48px;border-radius:50%;border:0;background:var(--surface);box-shadow:0 0 0 1px var(--line);color:var(--blue);cursor:pointer;font-size:1.1rem;display:grid;place-items:center}.rail-ctl svg{width:18px;height:18px;fill:currentColor}
-.rail-ctl button:hover{background:var(--blue);color:#fff}
-/* cta */
-.cta{background:var(--blue);color:#fff;border-radius:30px;padding:clamp(2rem,6vw,4.5rem);text-align:center;background-image:radial-gradient(500px circle at 90% 0,rgba(255,255,255,.2),transparent 60%)}
-.cta p{color:#dbe7ff;margin-inline:auto}.cta .actions{justify-content:center}
-/* inner pages */
-.page-head{background:linear-gradient(var(--tint),var(--bg));border-bottom:1px solid var(--line)}.page-head .wrap{padding-block:clamp(2.4rem,6vw,4.5rem) clamp(1.6rem,4vw,3rem)}
-.page-head h1{font-size:clamp(2.4rem,6vw,4.4rem)}.page-head p{margin:0}
-.grid{display:grid;gap:1.3rem;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr))}
-.card{padding:1.6rem;display:flex;flex-direction:column;gap:.5rem;transition:transform .35s var(--ease),border-color .35s}
-.card:hover{transform:translateY(-5px);border-color:var(--blue)}.card .foot{margin-top:auto;padding-top:1rem;display:flex;gap:.6rem;flex-wrap:wrap}
-.split{display:grid;gap:3rem;grid-template-columns:1.1fr 1fr;align-items:start}
+.soc{display:flex;gap:.55rem}.soc a{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;color:var(--blue);background:var(--glass);box-shadow:0 0 0 1px var(--line);transition:.25s}.soc a:hover{background:var(--blue);color:#fff;transform:translateY(-2px)}
+.soc svg{width:18px;height:18px;fill:currentColor}
+/* hero */
+.hero{--mx:70%;--my:30%;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(420px circle at var(--mx) var(--my),rgba(29,78,216,.1),transparent 70%)}
+.hg{position:relative;z-index:1;display:grid;gap:3rem;grid-template-columns:1fr;width:100%;align-items:center;padding-top:clamp(3.5rem,9vw,7rem);padding-bottom:clamp(3.5rem,9vw,7rem)}
+.hg h1 span{display:block}.hg h1 span+span{font-style:italic;color:var(--blue)}
+.lead{font-size:1.18rem;color:var(--mute);margin:1.4rem 0 2rem}.row{display:flex;flex-wrap:wrap;gap:.8rem}
+@keyframes fl{to{transform:translateY(-12px)}}
+/* sections */
+.grid{display:grid;gap:1.3rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{border-radius:var(--r);padding:1.7rem;display:flex;flex-direction:column;gap:.5rem;transition:transform .35s var(--ease),box-shadow .35s}
+.card:hover{transform:translateY(-6px);box-shadow:0 0 0 1px var(--blue),0 30px 50px -28px rgba(29,78,216,.5),inset 0 1px 0 #fff}
+.card .foot{margin-top:auto;padding-top:1.2rem;display:flex;justify-content:space-between;align-items:center;gap:.6rem}
+.split{display:grid;gap:3rem;grid-template-columns:1.1fr 1fr;align-items:center}@media(max-width:860px){.split{grid-template-columns:1fr}}
+.video{position:relative;aspect-ratio:16/9;border-radius:24px;overflow:hidden;display:grid;place-items:center;background:linear-gradient(135deg,var(--sky),var(--bg) 55%,var(--sky));box-shadow:0 0 0 1px var(--line),0 30px 60px -34px rgba(29,78,216,.5)}
+.play{width:84px;height:84px;border-radius:50%;border:0;background:var(--blue);color:#fff;cursor:pointer;display:grid;place-items:center;animation:pulse 2.4s infinite}.play svg{width:30px;height:30px;fill:#fff;margin-left:4px}
+@keyframes pulse{70%{box-shadow:0 0 0 24px rgba(29,78,216,0)}0%{box-shadow:0 0 0 0 rgba(29,78,216,.45)}}
+.video small{position:absolute;left:1.2rem;bottom:1rem;color:var(--mute)}
+.head{display:flex;align-items:end;justify-content:space-between;gap:1rem;margin-bottom:1.6rem}
+.arrows{display:flex;gap:.5rem}.arrows button{width:46px;height:46px;border-radius:50%;border:0;background:var(--glass);box-shadow:0 0 0 1px var(--line);font-size:1.1rem;cursor:pointer;color:var(--blue);transition:.25s}.arrows button:hover{background:var(--blue);color:#fff}
+.cta{background:var(--blue);color:#fff;border-radius:30px;padding:clamp(2rem,6vw,4.5rem);margin:0 1.4rem;background-image:radial-gradient(500px circle at 90% 0,rgba(255,255,255,.22),transparent 60%)}.cta p{color:#dbe7ff}
+.page{background:linear-gradient(var(--tint),var(--bg));border-bottom:1px solid var(--line)}.page .wrap{padding-top:clamp(3rem,7vw,5.5rem);padding-bottom:clamp(2rem,5vw,4rem)}
+.page h1{font-size:clamp(2.6rem,6vw,4.6rem)}
+.tag{align-self:flex-start;background:var(--sky);color:var(--blue2);border-radius:999px;padding:.15rem .8rem;font-size:.82rem;font-weight:700}
 .rows div{display:flex;justify-content:space-between;gap:1rem;padding:1.05rem 0;border-bottom:1px solid var(--line)}
-details{margin-bottom:.7rem;overflow:hidden}details[open]{border-color:var(--blue)}
-summary{cursor:pointer;font-weight:700;padding:1.1rem 1.3rem;list-style:none;display:flex;justify-content:space-between;gap:1rem;min-height:56px}summary::-webkit-details-marker{display:none}
-summary:after{content:"+";font-size:1.4rem;line-height:1;color:var(--blue);transition:transform .3s var(--ease)}details[open] summary:after{transform:rotate(45deg)}
-details p{padding:0 1.3rem;margin:0 0 1.2rem;color:var(--mute)}.linklike{background:none;border:0;padding:0;font:inherit;font-weight:700;color:var(--blue);cursor:pointer;text-decoration:underline}
+details{border-radius:14px;margin-bottom:.7rem;overflow:hidden}details[open]{box-shadow:0 0 0 1.5px var(--blue)}
+summary{cursor:pointer;font-weight:700;padding:1.1rem 1.3rem;list-style:none;display:flex;justify-content:space-between;gap:1rem}summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-size:1.4rem;line-height:1;transition:transform .3s var(--ease);color:var(--blue)}details[open] summary:after{transform:rotate(45deg)}
+details p{padding:0 1.3rem;margin:0 0 1.2rem;color:var(--mute)}
 /* forms */
-.formcard{padding:clamp(1.5rem,4vw,2.5rem);max-width:500px;width:100%}form{display:grid;gap:1rem}label{display:grid;gap:.35rem;font-weight:700;font-size:.92rem}
-input,select,textarea{font:inherit;font-weight:400;padding:.8rem 1rem;min-height:48px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);width:100%;transition:border-color .2s,box-shadow .2s}
-textarea{resize:vertical}input:focus,select:focus,textarea:focus{outline:0;border-color:var(--blue);box-shadow:0 0 0 4px rgba(29,78,216,.14)}
+.formcard{border-radius:26px;padding:clamp(1.5rem,4vw,2.5rem);max-width:500px;width:100%}
+form{display:grid;gap:1rem}label{display:grid;gap:.35rem;font-weight:700;font-size:.92rem}
+input,select{font:inherit;font-weight:400;padding:.8rem 1rem;border:1px solid var(--line);border-radius:12px;background:#fffdf8;color:var(--ink);transition:border-color .2s,box-shadow .2s;width:100%}
+input:focus,select:focus{outline:0;border-color:var(--blue);box-shadow:0 0 0 4px rgba(29,78,216,.14)}
 .steps{list-style:none;padding:0;display:grid;gap:1rem;counter-reset:s}.steps li{counter-increment:s;display:flex;gap:1rem;align-items:flex-start}
 .steps li:before{content:counter(s);flex:none;width:34px;height:34px;border-radius:50%;background:var(--blue);color:#fff;font-weight:800;display:grid;place-items:center}
-.account{border-radius:var(--r);padding:1.4rem;background:var(--blue);color:#fff;margin-bottom:1.4rem}.account small{opacity:.85}
-.account b{display:block;font:700 2.2rem var(--serif);letter-spacing:.06em;line-height:1.1;user-select:all}.account .actions{justify-content:space-between;align-items:center;margin-top:.6rem}
-.drop{display:grid;place-items:center;text-align:center;gap:.4rem;padding:1.4rem;border:1.5px dashed var(--blue);border-radius:16px;background:var(--tint);cursor:pointer;font-weight:500}.drop img{max-height:150px;border-radius:10px}.drop input{display:none}
-.pay{display:grid;gap:2.5rem;grid-template-columns:1fr 1fr;align-items:start}
+.acct{border-radius:20px;padding:1.4rem;background:var(--blue);color:#fff;margin-bottom:1.4rem}.acct small{opacity:.8}
+.acct b{display:block;font:700 2.2rem "Cormorant Garamond",serif;letter-spacing:.06em;line-height:1.1}
+.acct .row{align-items:center;justify-content:space-between;margin-top:.5rem}
+.drop{display:grid;place-items:center;text-align:center;gap:.4rem;padding:1.4rem;border:1.5px dashed var(--blue);border-radius:16px;background:var(--tint);cursor:pointer;font-weight:500}.drop img{max-height:150px;border-radius:10px}
+.drop input{display:none}.pay{display:grid;gap:2.5rem;grid-template-columns:1fr 1fr;align-items:start}@media(max-width:860px){.pay{grid-template-columns:1fr}}
 /* dashboard */
 .badge{display:inline-flex;align-items:center;gap:.5rem;border-radius:999px;padding:.3rem .95rem;font-weight:700;font-size:.88rem}.badge:before{content:"";width:.55rem;height:.55rem;border-radius:50%;background:currentColor}
-.badge.warn{background:var(--warn);color:var(--warn-ink)}.badge.ok{background:var(--ok);color:var(--ok-ink)}
-.timeline{display:flex;gap:.6rem;margin-top:1.4rem;flex-wrap:wrap}.timeline span{flex:1 1 150px;padding:.7rem 1rem;border-radius:12px;background:var(--surface);box-shadow:0 0 0 1px var(--line);font-size:.9rem;color:var(--mute)}
-.timeline .now{background:var(--warn);color:var(--warn-ink);box-shadow:none;font-weight:700}.timeline .done{background:var(--ok);color:var(--ok-ink);box-shadow:none;font-weight:700}
-.dash{display:grid;gap:1.3rem;grid-template-columns:repeat(auto-fit,minmax(min(290px,100%),1fr))}
-.module{display:flex;justify-content:space-between;align-items:center;gap:.8rem;padding:.7rem 1rem;border-radius:14px;margin-top:.6rem;box-shadow:0 0 0 1px var(--line);min-height:56px}.module.locked{opacity:.6}.lock{width:15px;height:15px;fill:currentColor;vertical-align:-2px}
-.ring{--p:0;width:124px;height:124px;border-radius:50%;background:conic-gradient(var(--blue) calc(var(--p)*1%),var(--sky) 0);display:grid;place-items:center;transition:.6s}.ring b{width:96px;height:96px;border-radius:50%;background:var(--bg);display:grid;place-items:center;font:700 1.9rem var(--serif)}
-/* books and messages */
-.book-grid{display:grid;gap:1.4rem;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));max-width:900px;margin:0 auto}
-.book{overflow:hidden}.book-cover{position:relative;aspect-ratio:4/5;display:grid;place-items:center;text-align:center;padding:1.5rem;background:linear-gradient(160deg,var(--sky),var(--bg));color:var(--mute);font:600 1.4rem var(--serif)}
-.book-cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:1.1rem;filter:drop-shadow(0 18px 22px rgba(11,26,68,.28))}
-.promo{position:absolute;top:1rem;left:1rem;z-index:2;font-style:normal;font-weight:800;font-size:.8rem;background:var(--flame);color:#fff;border-radius:999px;padding:.25rem .85rem}
-.book-body{padding:1.5rem}.book-body h3{font-size:1.7rem}
-.price{display:flex;align-items:baseline;gap:.8rem;flex-wrap:wrap;margin:.2rem 0 1.1rem}.price-now{font:800 1.9rem var(--sans);color:var(--blue);line-height:1}
-.was{position:relative;text-decoration:none;color:var(--mute);font-weight:700}.was:after{content:"";position:absolute;left:-5px;right:-5px;top:50%;height:2px;border-radius:2px;background:var(--ink);transform:rotate(-14deg)}
-.save{font-size:.8rem;font-weight:700;background:var(--ok);color:var(--ok-ink);border-radius:999px;padding:.15rem .7rem}
-.messages{display:grid;gap:.8rem}.message{display:flex;align-items:center;gap:1rem;padding:1rem 1.2rem;text-decoration:none;transition:transform .3s var(--ease),border-color .3s}.message:hover{transform:translateX(6px);border-color:var(--blue)}
-.message .no{font:700 1.9rem var(--serif);color:var(--blue);width:2.1rem;flex:none}.message>div{flex:1;min-width:0}.message b{display:block;font:700 1.45rem/1.1 var(--serif)}.message small{color:var(--mute)}
-.message .cue{font-weight:700;font-size:.85rem;color:var(--blue);white-space:nowrap}.spotify{width:42px;height:42px;fill:#1db954;flex:none}
-.gallery{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr))}.gallery figure{margin:0;overflow:hidden}.gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
-.empty{text-align:center;padding:3rem 1rem;color:var(--mute)}
-/* footer */
-.site-foot{border-top:1px solid var(--line);background:linear-gradient(var(--bg),var(--tint));margin-top:3rem}
-.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:2.5rem;padding-block:3.2rem 2.2rem}.foot-brand p{max-width:34ch;margin:1rem 0 0}
-.foot-col h4{font:700 1rem var(--sans);margin:0 0 .6rem}.foot-col a,.foot-col button{display:block;padding:.35rem 0;text-decoration:none;color:var(--mute);font:500 1rem var(--sans);background:none;border:0;cursor:pointer;text-align:left}.foot-col a:hover,.foot-col button:hover{color:var(--blue)}
-.foot-bottom{border-top:1px solid var(--line)}.foot-bottom .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.4rem 1.5rem;padding-block:1.1rem;font-size:.88rem;color:var(--mute)}
-/* mobile navigation, chat, dialogs */
-.tabs{display:none}.fab{position:fixed;right:1.2rem;bottom:1.2rem;z-index:30;border:0;border-radius:999px;background:var(--blue);color:#fff;font:700 .92rem var(--sans);padding:.85rem 1.3rem;min-height:48px;cursor:pointer;box-shadow:0 14px 30px -10px rgba(29,78,216,.7)}
-#chat{position:fixed;right:1.2rem;bottom:5rem;width:min(340px,92vw);z-index:30;display:none;overflow:hidden;border-radius:var(--r)}#chat.open{display:block}
-#chat h3{margin:0;background:var(--blue);color:#fff;padding:.85rem 1.1rem;font:700 1rem var(--sans)}
+.badge.y{background:var(--amber);color:var(--amberink)}.badge.g{background:var(--green);color:var(--greenink)}
+.tl{display:flex;gap:.6rem;margin-top:1.4rem;flex-wrap:wrap}.tl span{flex:1 1 150px;padding:.7rem 1rem;border-radius:12px;background:#fffdf8;box-shadow:0 0 0 1px var(--line);font-size:.9rem;color:var(--mute)}
+.tl span.on{background:var(--amber);color:var(--amberink);box-shadow:none;font-weight:700}.tl span.ok{background:var(--green);color:var(--greenink);box-shadow:none;font-weight:700}
+.dash{display:grid;gap:1.3rem;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.mod{display:flex;justify-content:space-between;align-items:center;gap:.8rem;padding:.8rem 1rem;border-radius:14px;margin-top:.6rem;box-shadow:0 0 0 1px var(--line)}.mod.lock{opacity:.6}
+.lk{width:15px;height:15px;fill:currentColor;vertical-align:-2px}
+.ring{--p:0;width:124px;height:124px;border-radius:50%;background:conic-gradient(var(--blue) calc(var(--p)*1%),var(--sky) 0);display:grid;place-items:center;transition:.6s}.ring b{width:96px;height:96px;border-radius:50%;background:var(--bg);display:grid;place-items:center;font:700 1.9rem "Cormorant Garamond",serif}
+footer{border-top:1px solid var(--line);background:linear-gradient(var(--bg),var(--tint));margin-top:5rem}footer .wrap{padding-top:3rem;padding-bottom:3rem}
+.fab{position:fixed;right:1.2rem;bottom:calc(1.2rem + env(safe-area-inset-bottom,0px));z-index:30;border:0;border-radius:999px;background:var(--blue);color:#fff;font:700 .92rem "Plus Jakarta Sans";padding:.85rem 1.3rem;cursor:pointer;box-shadow:0 14px 30px -10px rgba(29,78,216,.7)}
+#chat{position:fixed;right:1.2rem;bottom:calc(5rem + env(safe-area-inset-bottom,0px));width:min(340px,92vw);border-radius:20px;z-index:30;display:none;overflow:hidden}#chat.open{display:block}
+#chat header{position:static;background:var(--blue);color:#fff;padding:.85rem 1.1rem;font-weight:700;border:0}
 #log{padding:1rem;height:200px;overflow:auto;display:grid;gap:.5rem;align-content:start}#log p{margin:0;padding:.55rem .8rem;border-radius:12px;background:var(--tint);font-size:.92rem;max-width:90%}#log p.me{background:var(--blue);color:#fff;justify-self:end}
-#chat form{display:flex;gap:.4rem;padding:.7rem;border-top:1px solid var(--line)}
-dialog{border:0;border-radius:26px;padding:0;width:min(460px,92vw);background:var(--bg);color:var(--ink)}dialog::backdrop{background:rgba(11,26,68,.45)}dialog .formcard{max-width:none;box-shadow:none;border:0}
-dialog.sheet{margin:auto auto 0;width:100%;max-width:560px;border-radius:24px 24px 0 0;padding:1.2rem 1.2rem calc(1.2rem + env(safe-area-inset-bottom,0px))}
-.sheet h3{margin-bottom:.6rem}.sheet a,.sheet button{display:flex;align-items:center;gap:.8rem;width:100%;min-height:54px;padding:.6rem .4rem;border:0;border-bottom:1px solid var(--line);background:none;color:var(--ink);font:600 1.05rem var(--sans);text-decoration:none;text-align:left;cursor:pointer}.sheet svg{width:22px;height:22px;fill:var(--blue)}
-.toast{position:fixed;left:50%;bottom:6rem;transform:translate(-50%,20px);background:var(--ink);color:#fff;padding:.8rem 1.3rem;border-radius:14px;opacity:0;pointer-events:none;transition:.35s var(--ease);z-index:90;max-width:90vw;text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}
-.page-in{animation:pagein .25s var(--ease)}@keyframes pagein{from{opacity:0;transform:translateY(8px)}}
-/* splash: plays once per visit */
-#splash{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:var(--bg);overflow:hidden;cursor:pointer;transition:opacity .9s var(--ease),visibility .9s}#splash.out{opacity:0;visibility:hidden}
-.splash-stage{position:relative;display:grid;justify-items:center;gap:1.8rem;padding:0 1rem}
-.splash-logo{width:min(58vmin,400px);overflow:hidden;position:relative}.splash-logo img{display:block;width:100%;height:auto;mix-blend-mode:multiply;opacity:0}
-.splash-logo:after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 42%,rgba(255,170,60,.5) 50%,transparent 58%);transform:translateX(-130%)}
-.go .splash-logo img{animation:focus 2.2s var(--ease) .7s both}.go .splash-logo:after{animation:sweep 1.8s ease-in-out 2.3s forwards}
-@keyframes focus{from{opacity:0;transform:scale(.88);filter:blur(20px) brightness(1.5)}to{opacity:1;transform:none;filter:none}}@keyframes sweep{to{transform:translateX(130%)}}
-.splash-glow{position:absolute;width:min(95vw,780px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(255,150,40,.5),rgba(255,110,20,.18) 40%,transparent 68%);opacity:0}
-.go .splash-glow{animation:glow 5s ease-in-out .5s both}@keyframes glow{0%{opacity:0;transform:scale(.6)}40%{opacity:1}100%{opacity:.85;transform:scale(1.1)}}
-.splash-rays{position:absolute;width:120vmax;height:120vmax;background:repeating-conic-gradient(rgba(255,160,50,.1) 0 5deg,transparent 5deg 16deg);-webkit-mask-image:radial-gradient(circle,#000 0,transparent 50%);mask-image:radial-gradient(circle,#000 0,transparent 50%);opacity:0}
-.go .splash-rays{opacity:1;transition:opacity 2s 1s;animation:spin 40s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
-.splash-slogan{margin:0;display:flex;flex-wrap:wrap;justify-content:center;gap:.1rem .7rem;text-align:center;font:italic 600 clamp(1.1rem,3.2vw,1.55rem)/1.25 var(--serif)}
-.splash-slogan span{opacity:0;transform:translateY(10px);filter:blur(5px)}.go .splash-slogan span{animation:rise-in .9s var(--ease) forwards}
-.go .splash-slogan span:nth-child(1){animation-delay:1s}.go .splash-slogan span:nth-child(2){animation-delay:2s}.go .splash-slogan span:nth-child(3){animation-delay:3s}@keyframes rise-in{to{opacity:1;transform:none;filter:none}}
-.splash-dots{display:flex;gap:12px;opacity:0}.go .splash-dots{opacity:1;transition:opacity .5s .4s}.splash-dots i{width:12px;height:12px;border-radius:50%;background:#ddd7c8}
-.go .splash-dots i{animation:tick .5s cubic-bezier(.3,1.6,.5,1) calc(var(--i)*1s + .3s) forwards}@keyframes tick{50%{transform:scale(1.6)}100%{background:var(--flame);box-shadow:0 0 12px 2px rgba(242,106,27,.5)}}
-.ember{position:absolute;bottom:38%;width:var(--s);height:var(--s);border-radius:50%;background:#ffb43c;box-shadow:0 0 8px 2px rgba(255,140,30,.8);opacity:0}.go .ember{animation:float-up var(--t) ease-out var(--d) infinite}
-@keyframes float-up{0%{opacity:0;transform:none}15%{opacity:1}100%{opacity:0;transform:translate(var(--x),-46vh) scale(.3)}}
-/* tablet and phone: one navigation system, the bottom bar */
-@media(max-width:900px){
-body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
-.nav,.head-actions .out,.fab,.foot-col,.splash-rays{display:none}.site-head .wrap{padding-block:.5rem}
-.tabs{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(247,245,239,.96);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:.25rem .3rem calc(.25rem + env(safe-area-inset-bottom,0px))}
-.tabs a,.tabs button{display:grid;justify-items:center;align-content:center;gap:.15rem;min-height:58px;padding:.3rem 0;border:0;background:none;font:700 .78rem var(--sans);color:var(--mute);text-decoration:none;cursor:pointer}
-.tabs svg{width:23px;height:23px;fill:currentColor}.tabs [aria-current=page]{color:var(--blue);box-shadow:inset 0 3px 0 var(--flame)}
-.tabs .primary svg{width:40px;height:40px;padding:9px;border-radius:50%;background:var(--blue);fill:#fff;margin-top:-18px;box-shadow:0 8px 18px -6px rgba(29,78,216,.7)}.tabs .primary{color:var(--blue)}
-#chat{left:.6rem;right:.6rem;width:auto;bottom:calc(84px + env(safe-area-inset-bottom,0px))}.toast{bottom:calc(96px + env(safe-area-inset-bottom,0px));width:calc(100% - 2rem)}
-.hero{display:block;min-height:0}.hero-bg{bottom:auto;height:clamp(240px,40vh,380px)}.hero-bg:after{background:linear-gradient(180deg,transparent 55%,var(--bg))}
-.hero-photo{background-image:var(--hero-img-m,var(--hero-img));background-position:center 30%;opacity:.9}
-.hero .wrap{padding-top:calc(clamp(240px,40vh,380px) - 3.4rem);padding-bottom:1.4rem}.hero-card{background:rgba(255,253,248,.94);padding:1.4rem;border-radius:24px}
-.hero h1{font-size:clamp(2.3rem,10.5vw,3.2rem)}.lead{font-size:1.02rem;margin:.9rem 0 1.3rem}.actions .btn{flex:1 1 auto}
-.wrap{padding:2.2rem 1.1rem}.center{margin-bottom:1.3rem}.split,.pay{grid-template-columns:1fr;gap:2rem}
-.team{grid-template-columns:1fr;gap:1rem}.member{flex-direction:row}.portrait{width:36%;flex:none;aspect-ratio:3/4}.member-body{display:flex;flex-direction:column;justify-content:center;padding:1rem}.member-body h3{font-size:1.45rem}.portrait b{font-size:3rem}
-.pillars li{padding:.6rem 0}.pillars li:nth-child(n){padding-left:0}.cta{padding:1.8rem 1.3rem;border-radius:24px}
-.book-cover{aspect-ratio:1/1}.message .cue{display:none}.message:hover{transform:none}.card:hover{transform:none}.account b{font-size:1.9rem}
-.foot-grid{grid-template-columns:1fr;padding-block:2rem 1.2rem}.icons.labeled{grid-template-columns:repeat(5,1fr);justify-content:stretch;gap:.4rem}.icons.labeled a{font-size:.72rem}
-.foot-bottom .wrap{flex-direction:column;text-align:center;padding-block:.9rem}.site-foot{margin-top:2rem}.page-head .wrap{padding-block:1.6rem 1.2rem}.page-head h1{font-size:2.3rem}}
-@media(hover:none){.btn:hover,.icons a:hover{transform:none}}
+#chat form{display:flex;gap:.4rem;padding:.7rem;border-top:1px solid var(--line)}#chat input{min-width:0}
+.toast{position:fixed;left:50%;bottom:6rem;transform:translate(-50%,20px);background:var(--ink);color:#fff;padding:.8rem 1.3rem;border-radius:14px;opacity:0;pointer-events:none;transition:.35s var(--ease);z-index:40}.toast.show{opacity:1;transform:translate(-50%,0)}
+/* skeleton */
+.sk{border-radius:12px;background:linear-gradient(100deg,#e7e3d8 30%,#f4f1e8 50%,#e7e3d8 70%);background-size:220% 100%;animation:sh 1.5s linear infinite}@keyframes sh{to{background-position:-120% 0}}
+.skp{min-height:80vh}.skg{display:grid;gap:1.3rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:3rem}.skc{padding:1.5rem;border-radius:var(--r);display:grid;gap:.8rem}
+.pbar{position:fixed;top:0;left:0;right:0;height:3px;z-index:50}.pbar i{display:block;height:100%;background:var(--blue);animation:grow linear forwards}@keyframes grow{from{width:0}to{width:100%}}
+/* HERO PHOTO: the picture behind the headline. Put morning.jpg next to this file. */
+:root{--hero-img:url("morning.jpg")}
+.hbg{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;background:linear-gradient(112deg,var(--bg) 18%,#e2eafb 62%,#cfdcf9)}
+.ph{position:absolute;inset:-4%;background:var(--hero-img) center right/cover no-repeat;opacity:.55;filter:saturate(.9) contrast(1.05);animation:kb 24s ease-in-out infinite alternate}
+@keyframes kb{to{transform:scale(1.1) translate(-1.5%,1%)}}
+.bk{position:absolute;border-radius:50%;filter:blur(2px);animation:fl 9s ease-in-out infinite alternate}
+.b1{width:260px;height:260px;right:8%;top:6%;background:radial-gradient(circle,rgba(120,160,255,.4),transparent 70%)}
+.b2{width:190px;height:190px;right:30%;top:46%;background:radial-gradient(circle,rgba(29,78,216,.3),transparent 70%);animation-delay:-3s}
+.b3{width:120px;height:120px;right:17%;bottom:12%;background:radial-gradient(circle,rgba(120,160,255,.4),transparent 70%);animation-delay:-5s}
+.b4{width:90px;height:90px;right:44%;top:14%;background:radial-gradient(circle,rgba(29,78,216,.24),transparent 70%);animation-delay:-2s}
+.b5{width:340px;height:340px;right:-4%;bottom:-9%;background:radial-gradient(circle,rgba(29,78,216,.22),transparent 70%);animation-delay:-6s}
+.b6{width:60px;height:60px;right:36%;bottom:26%;background:radial-gradient(circle,rgba(120,160,255,.4),transparent 70%);animation-delay:-4s}
+.hbg:before{content:"";position:absolute;inset:0;z-index:2;opacity:.1;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hbg:after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,rgba(247,245,239,.72) 0%,rgba(247,245,239,.38) 55%,rgba(247,245,239,.08) 100%),linear-gradient(180deg,transparent 72%,var(--bg))}
+@media(max-width:900px){.bk{opacity:.7}}
+.car{position:relative;display:grid;border-radius:28px;padding:clamp(1rem,2.5vw,1.6rem);overflow:hidden}
+.sl{will-change:opacity,transform;grid-area:1/1;display:grid;grid-template-columns:minmax(0,.82fr) 1fr;gap:clamp(1.4rem,4vw,3.5rem);align-items:center;opacity:0;visibility:hidden;transform:translateX(28px);transition:opacity .7s var(--ease),transform .7s var(--ease),visibility .7s}
+.sl.on{opacity:1;visibility:visible;transform:none}
+.pic{aspect-ratio:4/5;border-radius:20px;overflow:hidden;width:100%;max-height:580px;background:linear-gradient(160deg,var(--sky),var(--bg) 60%,var(--tint));box-shadow:0 0 0 1px var(--line)}
+.pic img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+.ph4{height:100%;display:grid;place-content:center;text-align:center;gap:.5rem}.ph4 b{font:600 clamp(4.5rem,11vw,8rem) "Cormorant Garamond",serif;color:var(--blue);line-height:1}.ph4 span{font-size:.85rem;color:var(--mute)}
+.sbody h3{font-size:clamp(2.3rem,4.6vw,3.5rem);margin-top:.6rem}
+.dots{display:flex;gap:.5rem;margin-top:1.2rem;justify-content:center}
+.cd{width:38px;height:6px;border:0;padding:0;border-radius:99px;background:var(--sky);cursor:pointer;overflow:hidden;position:relative}
+.cd i{position:absolute;inset:0;background:var(--blue);transform:scaleX(0);transform-origin:left}.cd.on i{animation:fill var(--car,6s) linear forwards}
+@keyframes fill{to{transform:scaleX(1)}}
+@media(max-width:760px){.sl{grid-template-columns:1fr}.pic{max-width:340px;margin:0 auto}}
+/* mobile and responsive */
+html{-webkit-text-size-adjust:100%}body{overflow-x:clip;-webkit-tap-highlight-color:transparent}
+button,.btn,a,summary,.drop{touch-action:manipulation}.car{touch-action:pan-y}
+.cd{height:26px;background:none}.cd:before{content:"";position:absolute;left:0;right:0;top:10px;height:6px;border-radius:99px;background:var(--sky)}.cd i{inset:10px 0;border-radius:99px}
+.bn{line-height:1.05}
+@media(max-width:1200px){
+.burger{display:block;min-height:44px}
+.menu{position:absolute;left:0;right:0;top:100%;background:var(--bg);flex-direction:column;align-items:stretch;gap:1rem;padding:.4rem 1.4rem 1.4rem;border-bottom:1px solid var(--line);display:none;max-height:calc(100vh - 70px);max-height:calc(100dvh - 70px);overflow:auto;box-shadow:0 30px 40px -30px rgba(11,26,68,.4)}
+.menu.open{display:flex}
+.menu .links{flex-direction:column;align-items:stretch;gap:0}
+.menu .links a:not(.btn){display:block;padding:.95rem 0;border-bottom:1px solid var(--line);font-size:1.05rem}.menu .links a:not(.btn):after{display:none}
+.menu .acts{flex-direction:row}.menu .acts .btn{flex:1;justify-content:center;min-height:48px;font-size:1rem}}
+@media(hover:none){.card:hover{transform:none;box-shadow:0 0 0 1px var(--line),0 24px 48px -28px rgba(29,78,216,.35),inset 0 1px 0 #fff}.btn:hover{transform:none;box-shadow:none}.soc a:hover{transform:none}}
+/* v9 */
+.hc{padding:clamp(1.5rem,4vw,3rem);border-radius:30px;max-width:720px}
+.center{text-align:center;margin:0 auto 2rem;max-width:62ch}.center p{margin-left:auto;margin-right:auto}
+.vb{max-width:880px;margin:0 auto}.vm{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));max-width:880px;margin:1.6rem auto 0}.vm>div{padding:1.5rem;border-radius:var(--r)}.vm p{margin:0;color:var(--mute)}
+.video video,.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover}
+.tabs{display:none}
+textarea{font:inherit;padding:.8rem 1rem;border:1px solid var(--line);border-radius:12px;background:#fffdf8;color:var(--ink);width:100%;resize:vertical}textarea:focus{outline:0;border-color:var(--blue);box-shadow:0 0 0 4px rgba(29,78,216,.14)}
+dialog{border:0;border-radius:26px;padding:0;width:min(460px,92vw);background:var(--bg);color:var(--ink)}dialog::backdrop{background:rgba(11,26,68,.45)}dialog .formcard{max-width:none;box-shadow:none}
+/* social icons, testimonials, footer */
+.soc a[data-n=facebook]{--bc:#1877f2}.soc a[data-n=instagram]{--bc:#e4405f}.soc a[data-n=youtube]{--bc:#f00}.soc a[data-n=tiktok]{--bc:#000}.soc a[data-n=telegram]{--bc:#26a5e4}.soc a[data-n=spotify]{--bc:#1db954}
+.soc.br a{color:var(--bc)}.soc.br a:hover{background:var(--bc);color:#fff}.isoc{margin-top:1rem}
+.soc.lbl{display:grid;grid-template-columns:repeat(5,auto);gap:1rem 1.3rem;justify-content:start;margin-top:1.4rem}
+.soc.lbl a{width:auto;height:auto;border-radius:0;background:none;box-shadow:none;display:grid;justify-items:center;gap:.45rem;font-size:.8rem;font-weight:700;text-decoration:none;color:var(--ink)}
+.soc.lbl a:hover{background:none;color:var(--ink);transform:none}
+.ib{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--glass);box-shadow:0 0 0 1px var(--line);color:var(--bc);transition:.25s}
+.soc.lbl a:hover .ib{background:var(--bc);color:#fff;transform:translateY(-2px)}.soc.lbl .ib svg{width:21px;height:21px}
+.mq{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.mt{display:flex;width:max-content;animation:mqv 48s linear infinite;will-change:transform}.mq:hover .mt{animation-play-state:paused}
+@keyframes mqv{to{transform:translateX(-50%)}}
+.tc{flex:none;width:clamp(190px,24vw,260px);margin:0 1.1rem 0 0;border-radius:var(--r);overflow:hidden;background:var(--glass);box-shadow:0 0 0 1px var(--line),0 24px 44px -28px rgba(29,78,216,.45)}
+.ti{position:relative;aspect-ratio:4/5;display:grid;place-items:center;background:linear-gradient(160deg,var(--sky),var(--bg));color:var(--mute);font-size:.85rem}
+.ti img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.tc figcaption{padding:.8rem 1rem;font-weight:700;font-size:.92rem}
+.fw{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:2.5rem;padding-top:3.5rem;padding-bottom:2.5rem}
+.fbr p{max-width:34ch;margin:1rem 0 0}.fc h4{font:700 1rem "Plus Jakarta Sans",sans-serif;margin:0 0 .8rem}
+.fc a{display:block;padding:.3rem 0;text-decoration:none;color:var(--mute);font-weight:500}.fc a:hover{color:var(--blue)}
+.fbot{border-top:1px solid var(--line)}.fbot .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.4rem 1.5rem;padding:1.1rem 1.4rem;font-size:.88rem;color:var(--mute)}
+@media(max-width:900px){.fw{grid-template-columns:1fr 1fr;gap:2rem}.fbr{grid-column:1/-1}}
+@media(max-width:560px){.soc.lbl{grid-template-columns:repeat(3,auto)}}
+/* cinematic splash */
+#splash{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:var(--bg);overflow:hidden;cursor:pointer;transition:opacity .9s var(--ease),visibility .9s}
+#splash.out{opacity:0;visibility:hidden}
+#splash .stg{position:relative;display:grid;justify-items:center;gap:1.8rem}
+#splash .lg{position:relative;width:min(58vmin,420px);overflow:hidden}
+#splash .lg img{display:block;width:100%;height:auto;mix-blend-mode:multiply;opacity:0}
+#splash.go .lg img{animation:rack 2.2s var(--ease) .7s both,drift2 5s linear .7s forwards}
+@keyframes rack{from{opacity:0;transform:scale(.88);filter:blur(20px) brightness(1.5)}to{opacity:1;transform:scale(1);filter:blur(0) brightness(1)}}
+@keyframes drift2{to{transform:scale(1.06)}}
+#splash .lg:after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 42%,rgba(255,170,60,.5) 50%,transparent 58%);transform:translateX(-130%)}
+#splash.go .lg:after{animation:sweep 1.8s ease-in-out 2.3s forwards}
+@keyframes sweep{to{transform:translateX(130%)}}
+#splash .sg{position:absolute;width:min(95vw,780px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(255,150,40,.5),rgba(255,110,20,.18) 40%,transparent 68%);opacity:0;filter:blur(8px)}
+#splash.go .sg{animation:glow 5s ease-in-out .5s both}
+@keyframes glow{0%{opacity:0;transform:scale(.6)}40%{opacity:1}100%{opacity:.85;transform:scale(1.1)}}
+#splash .ry{position:absolute;width:120vmax;height:120vmax;background:repeating-conic-gradient(rgba(255,160,50,.1) 0 5deg,transparent 5deg 16deg);-webkit-mask-image:radial-gradient(circle,#000 0,transparent 50%);mask-image:radial-gradient(circle,#000 0,transparent 50%);opacity:0}
+#splash.go .ry{opacity:1;transition:opacity 2s 1s;animation:spin 40s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+#splash .gr{position:absolute;inset:0;z-index:5;pointer-events:none;opacity:.09;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+#splash .slg{margin:0;display:flex;flex-wrap:wrap;justify-content:center;gap:.1rem .7rem;text-align:center;font:italic 600 clamp(1.1rem,3.2vw,1.55rem)/1.25 "Cormorant Garamond",Georgia,serif;color:var(--ink)}
+#splash .slg span{opacity:0;transform:translateY(10px);filter:blur(5px)}
+#splash.go .slg span{animation:sloga .9s var(--ease) forwards}
+#splash.go .slg span:nth-child(1){animation-delay:1s}#splash.go .slg span:nth-child(2){animation-delay:2s}#splash.go .slg span:nth-child(3){animation-delay:3s}
+@keyframes sloga{to{opacity:1;transform:none;filter:blur(0)}}
+#splash .d3{display:flex;gap:12px;opacity:0}#splash.go .d3{opacity:1;transition:opacity .5s .4s}
+#splash .d3 i{width:12px;height:12px;border-radius:50%;background:#ddd7c8}
+#splash.go .d3 i{animation:tick .5s cubic-bezier(.3,1.6,.5,1) calc(var(--i)*1s + .3s) forwards}
+@keyframes tick{0%{transform:scale(1)}50%{transform:scale(1.6)}100%{transform:scale(1);background:#ff8a1f;box-shadow:0 0 12px 2px rgba(255,138,31,.55)}}
+@media(max-width:560px){#splash .slg{flex-direction:column;gap:0}}
+#splash .sp{position:absolute;bottom:38%;z-index:3;width:var(--s);height:var(--s);border-radius:50%;background:#ffb43c;box-shadow:0 0 8px 2px rgba(255,140,30,.8);opacity:0}
+#splash.go .sp{animation:rise var(--t) ease-out var(--d) infinite}
+@keyframes rise{0%{opacity:0;transform:translate(0,0)}15%{opacity:1}100%{opacity:0;transform:translate(var(--x),-46vh) scale(.3)}}
+@media(max-width:760px){#splash .ry{display:none}}
+@media(prefers-reduced-motion:reduce){.mq{overflow-x:auto}}
+/* books and messages */
+.bk2{display:grid;gap:1.4rem;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));max-width:900px;margin:0 auto}
+.bcard{border-radius:var(--r);overflow:hidden;display:grid;grid-template-rows:auto 1fr}
+.bcov{position:relative;aspect-ratio:4/5;display:grid;place-items:center;text-align:center;padding:1.5rem;background:linear-gradient(160deg,var(--sky),var(--bg));color:var(--mute);font:600 1.4rem "Cormorant Garamond",serif}
+.bcov img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:1.1rem;filter:drop-shadow(0 18px 22px rgba(11,26,68,.28))}
+.promo{position:absolute;top:1rem;left:1rem;z-index:2;font-style:normal;font-weight:800;font-size:.8rem;background:var(--blue);color:#fff;border-radius:999px;padding:.25rem .85rem}
+.bbody{padding:1.5rem}.bbody h3{font-size:1.7rem}.bbody .btn{margin-top:.2rem}
+.pr{display:flex;align-items:baseline;gap:.8rem;flex-wrap:wrap;margin:.2rem 0 1.1rem}
+.pnow{font:700 2.2rem "Cormorant Garamond",serif;color:var(--blue);line-height:1}
+.was{position:relative;text-decoration:none;color:var(--mute);font-weight:700}.was:after{content:"";position:absolute;left:-5px;right:-5px;top:50%;height:2px;border-radius:2px;background:var(--ink);transform:rotate(-14deg)}
+.save{font-size:.8rem;font-weight:700;background:var(--green);color:var(--greenink);border-radius:999px;padding:.15rem .7rem}
+.msgs{display:grid;gap:.8rem}
+.msg{display:flex;align-items:center;gap:1rem;padding:1rem 1.2rem;border-radius:var(--r);text-decoration:none;transition:transform .3s var(--ease),box-shadow .3s}
+.msg:hover{transform:translateX(6px);box-shadow:0 0 0 1px var(--blue),0 20px 36px -24px rgba(29,78,216,.5)}
+.mn{font:700 1.9rem "Cormorant Garamond",serif;color:var(--blue);width:2.1rem;flex:none}
+.si svg,.sbtn svg{width:42px;height:42px;fill:#1db954;display:block}.si{flex:none}
+.sbtn svg{width:22px;height:22px;fill:#fff}.sbtn{display:grid}
+.mi{flex:1;min-width:0}.mi b{display:block;font:700 1.45rem/1.1 "Cormorant Garamond",serif}.mi small{color:var(--mute)}
+.ml{font-weight:700;font-size:.85rem;color:var(--blue);white-space:nowrap}
+@media(max-width:560px){.ml{display:none}.msg:hover{transform:none}}
+/* v14: hero photo behind the headline, lean mobile */
+.mo{display:none}
+.hero{display:flex;align-items:center;min-height:min(80vh,740px)}
+.hc{background:rgba(255,253,248,.5);-webkit-backdrop-filter:blur(14px) saturate(150%);backdrop-filter:blur(14px) saturate(150%)}
+/* ===== phone layout: one block, grouped by area ===== */
+.skip{position:absolute;left:1rem;top:-4rem;z-index:200;background:var(--ink);color:#fff;padding:.7rem 1rem;border-radius:10px}.skip:focus{top:1rem}
+@media(max-width:760px){
+body{padding-bottom:calc(72px + env(safe-area-inset-bottom,0px))}
+body:before,.play,.bk,.ph{animation:none}.b4,.b6{display:none}
+/* spacing and type */
+.wrap{padding:2rem 1.1rem}.center{margin-bottom:1.2rem}h2{font-size:clamp(1.9rem,8vw,2.3rem)}
+.btn{min-height:46px}.btn.sm{min-height:44px}.md{display:none!important}.mo{display:block}
+/* header and menu */
+.brand{font-size:1.05rem}.mark{width:28px;height:28px}
+/* hero */
+.hero{min-height:0}.hg{padding-top:1.2rem;padding-bottom:1.6rem}.hc{padding:1.4rem;border-radius:24px}
+.hg h1{font-size:clamp(2.3rem,10.5vw,3rem)}.lead{font-size:1.02rem;margin:.9rem 0 1.2rem}
+.ph{opacity:.5}.hbg:after{background:linear-gradient(180deg,rgba(247,245,239,.5),rgba(247,245,239,.15) 60%,var(--bg))}
+.row .btn{flex:1 1 auto;justify-content:center}
+/* surfaces: solid on phones, glass only where it matters */
+.glass,#chat{-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.card,details,.formcard,.mod{-webkit-backdrop-filter:none;backdrop-filter:none;background:rgba(255,253,248,.93)}
+.card:hover{transform:none}
+/* sections */
+.split,.pay{gap:2rem}.head{flex-wrap:wrap}.grid{grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr))}
+.cta{margin:0 1rem;padding:1.6rem;border-radius:24px}.cta h2{margin-bottom:.8rem}
+.sbody h3{font-size:2rem}.bcov{aspect-ratio:1/1}.skp{min-height:60vh}
+.page .wrap{padding-top:1.6rem;padding-bottom:1.2rem}.page h1{font-size:2.2rem}
+.tl span{flex-basis:100%}.acct b{font-size:1.9rem}
+/* footer */
+footer{margin-top:3rem}.fw{gap:1.4rem;padding-top:1.8rem;padding-bottom:1.2rem}.fc{display:grid;grid-template-columns:1fr 1fr;column-gap:1rem}.fc h4{grid-column:1/-1;margin-bottom:.2rem}
+.fbr .soc.lbl{margin-top:1rem}.fbot .wrap{padding:.9rem 1.1rem}
+/* instructors */
+.head{flex-direction:column;align-items:center;text-align:center;gap:.8rem}.sl{gap:1rem}.pic{max-width:none;aspect-ratio:1/1}
+/* footer, tidied */
+.fbr .soc.lbl{grid-template-columns:repeat(5,1fr);gap:.3rem;margin-top:1rem}.soc.lbl a{font-size:.7rem}
+.fc{display:grid;grid-template-columns:1fr 1fr}.fc h4{grid-column:1/-1;margin-bottom:0}.fc a{padding:.6rem 0;white-space:nowrap}
+.fbot .wrap{text-align:center;justify-content:center}
+/* bottom bar, assistant, messages */
+.tabs{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:0;right:0;bottom:0;z-index:25;background:rgba(247,245,239,.95);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:.3rem .3rem calc(.3rem + env(safe-area-inset-bottom,0px))}
+.tabs a{display:grid;justify-items:center;align-content:center;gap:.1rem;min-height:54px;border-radius:12px;text-decoration:none;font-size:.74rem;font-weight:700;color:var(--mute)}.tabs svg{width:23px;height:23px;fill:currentColor}.tabs a[aria-current=page]{color:var(--blue);background:var(--sky)}
+.fab{right:.8rem;bottom:calc(84px + env(safe-area-inset-bottom,0px));padding:.65rem 1rem;font-size:.85rem}
+#chat{left:.6rem;right:.6rem;width:auto;max-height:70vh;bottom:calc(140px + env(safe-area-inset-bottom,0px))}
+.toast{width:calc(100% - 2rem);text-align:center;bottom:calc(100px + env(safe-area-inset-bottom,0px))}
+.soc a{width:44px;height:44px}.split .btn{width:100%;justify-content:center}}
+@media(prefers-reduced-motion:reduce){.cd.on i{transform:scaleX(1)}.sl{transform:none}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
 <a class="skip" href="#app">Skip to content</a>
-<div id="splash" role="status" aria-label="Loading Young Revivalist Academy"><div class="splash-rays"></div><div class="splash-glow"></div><div class="splash-stage"><div class="splash-logo"><img src="logo.jpg" alt="Young Revivalist Academy logo"></div><p class="splash-slogan"><span>Christlike Character.</span> <span>Kingdom Competence.</span> <span>Apostolic Influence.</span></p><div class="splash-dots" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></div></div></div>
-<script>try{if(sessionStorage.getItem('yra_seen'))document.getElementById('splash').remove()}catch(e){}</script>
-<noscript><p style="padding:2rem;text-align:center">Please turn on JavaScript to view Young Revivalist Academy.</p></noscript>
-<header class="site-head"><div class="wrap"><a class="brand" href="#home"><img class="logo" src="logo.jpg" alt="" width="44" height="44"><span>Young Revivalist Academy</span></a>
-<nav class="nav" aria-label="Main"><a data-r="home" href="#home">Home</a><a data-r="academies" href="#academies">Our Academies</a><a data-r="books" href="#books">Books &amp; Messages</a><a data-r="gallery" href="#gallery">Gallery</a><a data-r="payment" href="#payment">Payment portal</a></nav>
-<div class="head-actions"><a class="btn out sm" href="#register">Register</a><a class="btn sm" href="#login">Login</a></div></div></header>
+<noscript><style>#splash{display:none}</style><p style="padding:2rem;text-align:center">Please turn on JavaScript to view Young Revivalist Academy.</p></noscript>
+<div id="splash" role="status" aria-label="Loading Young Revivalist Academy"><div class="ry"></div><div class="sg"></div><div class="stg"><div class="lg"><img src="logo.jpg" alt="Young Revivalist Academy logo"></div><p class="slg"><span>Christlike Character.</span> <span>Kingdom Competence.</span> <span>Apostolic Influence.</span></p><div class="d3" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i></div></div><div class="gr"></div></div>
+<header><nav aria-label="Main">
+<a class="brand" href="#home"><span class="mark"></span><span class="bn">Young Revivalist Academy</span></a>
+<button class="burger" id="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+<div class="menu" id="menu"><div class="links"><a data-r="home" href="#home">Home</a><a data-r="academies" href="#academies">Our Academies</a><a data-r="books" href="#books">Books &amp; Messages</a><a data-r="gallery" href="#gallery">Gallery</a><a data-r="payment" href="#payment">Payment portal</a></div>
+<div class="acts"><a class="btn out sm" href="#register">Register</a><a class="btn sm" href="#login">Login</a></div></div>
+</nav></header>
 <main id="app" tabindex="-1"></main>
-<footer class="site-foot"><div class="wrap foot-grid"><div class="foot-brand"><a class="brand" href="#home"><img class="logo" src="logo.jpg" alt="" width="44" height="44"><span>Young Revivalist Academy</span></a><p class="mute">Raising young revivalists to stand in the gap.</p><div class="icons labeled" id="foot-social"></div></div>
-<div class="foot-col"><h4>Explore</h4><a href="#home">Home</a><a href="#academies">Our Academies</a><a href="#books">Books &amp; Messages</a><a href="#gallery">Gallery</a></div>
-<div class="foot-col"><h4>Our schools</h4><a href="#forge">The Revivalist Forge</a><a href="#ministry">School of Ministry</a><a href="#intercession">School of Intercession</a><a href="#finance">Finance Institute</a></div>
-<div class="foot-col"><h4>Students</h4><a href="#register">Register</a><a href="#login">Login</a><a href="#payment">Payment portal</a><button type="button" data-action="contact">Contact us</button></div></div>
-<div class="foot-bottom"><div class="wrap"><span>© <span id="year"></span> Young Revivalist Academy. All rights reserved.</span><span>Christlike Character. Kingdom Competence. Apostolic Influence.</span></div></div></footer>
+<footer><div class="wrap fw"><div class="fbr"><a class="brand" href="#home"><span class="mark"></span><span class="bn">Young Revivalist Academy</span></a><p class="mute md">Raising young revivalists to stand in the gap. A place where revival is birthed, purpose is discovered and transformation is real.</p><div class="soc lbl" id="fsoc"></div></div><div class="fc md"><h4>Explore</h4><a href="#home">Home</a><a href="#academies">Our Academies</a><a href="#books">Books &amp; Messages</a><a href="#gallery">Gallery</a></div><div class="fc md"><h4>Our schools</h4><a href="#forge">The Revivalist Forge</a><a href="#ministry">School of Ministry</a><a href="#intercession">School of Intercession</a><a href="#finance">Finance Institute</a></div><div class="fc"><h4>Students</h4><a href="#register">Register</a><a href="#login">Login</a><a href="#payment">Payment portal</a><a href="#" id="fcontact">Contact us</a></div></div><div class="fbot"><div class="wrap"><span>© <span id="yr"></span> Young Revivalist Academy. All rights reserved.</span><span>Christlike Character. Kingdom Competence. Apostolic Influence.</span></div></div></footer>
 <div class="tabs" id="tabs" role="navigation" aria-label="Quick menu"></div>
-<button class="fab" type="button" data-action="chat" aria-controls="chat" aria-expanded="false">Quick help</button>
-<section id="chat" class="surface" aria-label="Quick help"><h3>Quick help</h3><div id="log" aria-live="polite"><p>Hi! Ask about fees, classes, payment or your admission status.</p></div><div id="chat-extra"></div><form data-form="chat"><input name="q" aria-label="Your question" placeholder="Ask a question" autocomplete="off"><button class="btn sm" type="submit">Send</button></form></section>
-<dialog id="contact-dialog" aria-labelledby="contact-title"><div class="formcard"><h3 id="contact-title">Contact us</h3><p class="mute small">Ask about any of our schools and we will reply within a day.</p><form data-form="contact"><label>Full name<input required autocomplete="name"></label><label>Email<input type="email" required autocomplete="email"></label><label>Message<textarea required rows="4"></textarea></label><div class="actions"><button class="btn" type="submit">Send message</button><button class="btn out" type="button" data-action="close-dialog">Cancel</button></div></form></div></dialog>
-<dialog id="more-sheet" class="sheet" aria-label="More"><h3>More</h3><a href="#gallery" data-action="close-dialog">Gallery</a><a href="#payment" data-action="close-dialog">Payment portal</a><a href="#login" data-action="close-dialog">Login</a><button type="button" data-action="chat">Quick help</button><button type="button" data-action="contact">Contact us</button></dialog>
+<button class="fab" id="fab" aria-expanded="false" aria-controls="chat">Forge AI</button>
+<section id="chat" aria-label="Forge AI assistant"><header>Forge AI</header><div id="log" aria-live="polite"><p>Hi, I’m Forge AI. Ask about fees, classes, payment or your admission status.</p></div><form id="cf"><input id="ci" aria-label="Your question" placeholder="Ask a question" autocomplete="off"><button class="btn sm" type="submit">Send</button></form></section>
 <div class="toast" id="toast" role="status"></div>
+<dialog id="cdlg" aria-labelledby="ct"><div class="formcard"><h3 id="ct">Contact us</h3><p class="mute small">Ask about any of our schools and we will reply within a day.</p><form id="cform"><label>Full name<input required autocomplete="name"></label><label>Email<input type="email" required autocomplete="email"></label><label>Message<textarea required rows="4"></textarea></label><div class="row"><button class="btn" type="submit">Send message</button><button class="btn out" type="button" id="cclose">Cancel</button></div></form></div></dialog>
 <script>
-'use strict';
-/* ==== EDIT HERE: all of your content, links and prices live in this block ==== */
-const CONFIG={
-  slogan:['Christlike Character.','Kingdom Competence.','Apostolic Influence.'],
-  account:{number:'7394532011',bank:'FCMB (First City Monument Bank)'},
-  video:'',            // about-us video: 'about.mp4' or a YouTube link like 'https://www.youtube.com/embed/VIDEO_ID'
-  vision:'', mission:'', // leave empty until the client sends the text; the About section appears when any of these is filled
-  whatsapp:'',         // e.g. 'https://wa.me/234XXXXXXXXXX' adds a WhatsApp button to Quick help
-  selar:'https://selar.com/', spotify:'https://open.spotify.com/',
-  social:{facebook:'https://www.facebook.com/',instagram:'https://www.instagram.com/',youtube:'https://www.youtube.com/',tiktok:'https://www.tiktok.com/',telegram:'https://t.me/'},
-  team:[
-    {name:'Pastor John Victor',role:'Founder and lead instructor',photo:'solution.jpeg',bio:'',links:{facebook:'https://www.facebook.com/',instagram:'https://www.instagram.com/',youtube:'https://www.youtube.com/',spotify:'https://open.spotify.com/'}},
-    {name:'Samuel Johnson',role:'YRA President',photo:'authority.jpeg',bio:'',links:{facebook:'https://www.facebook.com/',instagram:'https://www.instagram.com/',youtube:'https://www.youtube.com/'}},
-    {name:'Enitan Segun Samuel',role:'Vice President',photo:'anointed.jpeg',bio:'',links:{facebook:'https://www.facebook.com/',instagram:'https://www.instagram.com/',youtube:'https://www.youtube.com/'}}],
-  testimonials:['testimonial1.jpg','testimonial2.jpg','testimonial3.jpg','testimonial4.jpg','testimonial5.jpg','testimonial6.jpg'].map(img=>({img,name:''})),
-  gallery:['gallery1.jpg','gallery2.jpg','gallery3.jpg','gallery4.jpg','gallery5.jpg','gallery6.jpg'],
-  classes:['Foundational','Identity','Maturity','Ambassador'],
-  schools:[['The Revivalist Forge','The foundation course for young people carrying revival.','Open for enrolment'],['School of Ministry','Train to serve, teach and lead in the church.',''],['School of Intercession','Learn to stand in the gap through prayer.',''],['Finance Institute','Build God’s economic system with wisdom and skill.','']],
-  books:[{title:'The Forge Discipleship Handbook',img:'book1.jpeg',url:'https://selar.com/',was:'₦7,000',now:'₦5,000',save:'₦2,000',about:''},{title:'Hunger for Fire',img:'book2.jpeg',url:'https://selar.com/',about:''}],
-  messages:[['The Secret Place','Pastor John Victor','https://open.spotify.com/'],['The Holy Spirit','Pastor John Victor','https://open.spotify.com/'],['Understanding Righteousness','Pastor John Victor','https://open.spotify.com/']],
-  faq:[['When are the lectures?',''],['How long is the class?',''],['Is there mentorship afterwards?','Yes. Graduates join the Forge Alumni Community for further mentorship.'],['How much is the commitment fee?',''],['Will I be ordained? If yes, as what?','']]
-};
-/* ==== app ==== */
-const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
-const state={admit:false,done:0,open:null,paid:false};
-const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(t.timer);t.timer=setTimeout(()=>t.classList.remove('show'),2800)};
-const I={home:'M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z',school:'M12 3 1 9l11 6 9-4.9V17h2V9zM5 13.2V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-3.8l-7 3.8z',book:'M5 3h13a1 1 0 0 1 1 1v14H7a2 2 0 0 0-2 2zM5 20a2 2 0 0 0 2 2h12v-2H7z',enrol:'M10 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zm-8 9a8 8 0 0 1 16 0zM19 8h2v3h3v2h-3v3h-2v-3h-3v-2h3z',more:'M5 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z',lock:'M7 10V8a5 5 0 0 1 10 0v2h1a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1zm2 0h6V8a3 3 0 0 0-6 0z',play:'M7 4l13 8-13 8z',pause:'M6 5h4v14H6zm8 0h4v14h-4z',
+var S={admit:false,done:0,open:null,paid:false},SKELETON_MS=3000,T;
+var $=function(s){return document.querySelector(s)},$$=function(s){return Array.from(document.querySelectorAll(s))};
+function on(s,e,f){var n=$(s);if(n)n.addEventListener(e,f)}
+function toast(m){var t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(function(){t.classList.remove('show')},2800)}
+var IC={home:'M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z',school:'M12 3 1 9l11 6 9-4.9V17h2V9zM5 13.2V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-3.8l-7 3.8z',image:'M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm2 11h12l-3.5-4.5-2.5 3-2-2.5zM8.5 10a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z',card:'M3 6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v2H3zm0 4h18v8a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1zm3 4v2h4v-2z',user:'M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zm-8 9a8 8 0 0 1 16 0z',lock:'M7 10V8a5 5 0 0 1 10 0v2h1a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1zm2 0h6V8a3 3 0 0 0-6 0z',
 facebook:'M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z',
 youtube:'M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z',
 tiktok:'M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z',
 telegram:'M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z',
 instagram:'M8 2h8a6 6 0 0 1 6 6v8a6 6 0 0 1-6 6H8a6 6 0 0 1-6-6V8a6 6 0 0 1 6-6zM8 4a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V8a4 4 0 0 0-4-4zM12 6.8a5.2 5.2 0 1 0 0 10.4 5.2 5.2 0 0 0 0-10.4zM12 8.7a3.3 3.3 0 1 1 0 6.6 3.3 3.3 0 0 1 0-6.6zM17.4 5.3a1.3 1.3 0 1 0 0 2.6 1.3 1.3 0 0 0 0-2.6z',
 spotify:'M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z'};
-const icon=(n,cls='')=>`<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true"><path ${n==='instagram'?'fill-rule="evenodd" ':''}d="${I[n]}"/></svg>`;
-const cap=s=>s[0].toUpperCase()+s.slice(1);
-const links=(o,who)=>Object.entries(o).filter(([,u])=>u).map(([n,u])=>`<a data-n="${n}" href="${u}" target="_blank" rel="noopener noreferrer" aria-label="${who} on ${cap(n)}">${icon(n)}</a>`).join('');
-const labeled=o=>Object.entries(o).filter(([,u])=>u).map(([n,u])=>`<a data-n="${n}" href="${u}" target="_blank" rel="noopener noreferrer"><span class="ico">${icon(n)}</span><span>${cap(n)}</span></a>`).join('');
-const head=(t,p)=>`<section class="page-head"><div class="wrap"><h1>${t}</h1>${p?`<p class="mute">${p}</p>`:''}</div></section>`;
-const faqList=()=>CONFIG.faq.map(([q,a])=>`<details><summary>${q}</summary><p>${a||'We will confirm this when you get in touch. <button class="linklike" type="button" data-action="contact">Ask us</button>'}</p></details>`).join('');
-const member=m=>`<article class="member surface"><div class="portrait"><b aria-hidden="true">${m.name.replace(/^Pastor /,'').split(' ').slice(0,2).map(w=>w[0]).join('')}</b>${m.photo?`<img src="${m.photo}" alt="Portrait of ${m.name}" loading="lazy" decoding="async">`:''}</div><div class="member-body"><span class="tag">${m.role}</span><h3>${m.name}</h3>${m.bio?`<p class="mute">${m.bio}</p>`:''}<div class="icons">${links(m.links||{},m.name)}</div></div></article>`;
-const about=()=>{const C=CONFIG;if(!(C.video||C.vision||C.mission))return '';return `<section class="wrap"><div class="center"><h2>About us</h2></div>${C.video?`<div class="video" id="about-video"><button class="play" type="button" data-action="play" aria-label="Play about us video">${icon('play')}</button></div>`:''}<div class="statements">${C.vision?`<div class="surface"><h3>Our vision</h3><p>${C.vision}</p></div>`:''}${C.mission?`<div class="surface"><h3>Our mission</h3><p>${C.mission}</p></div>`:''}</div></section>`};
-const pages={
-home:()=>`<section class="hero"><div class="hero-bg" aria-hidden="true"><div class="hero-photo"></div></div><div class="wrap"><div class="hero-card glass"><h1><span>Where revival is born,</span><span>purpose is found.</span></h1><p class="lead">Study online through four classes, Foundational, Identity, Maturity and Ambassador, with live teaching, mentorship and a certificate when you graduate.</p><div class="actions"><a class="btn" href="#register">Enrol now</a><a class="btn out" href="#academies">Explore the schools</a></div></div></div></section>
-<section class="band"><div class="wrap"><p class="band-label">What we build in every student</p><ol class="pillars">${CONFIG.slogan.map(s=>`<li>${s}</li>`).join('')}</ol></div></section>${about()}
-<section class="wrap"><div class="center"><h2>Meet our leadership</h2></div><div class="team">${CONFIG.team.map(member).join('')}</div></section>
-${CONFIG.testimonials.length?`<section class="wrap" id="testimonials"><div class="center"><h2>Testimonials</h2><p class="mute">Stories from students and graduates.</p></div><div class="rail" id="rail" tabindex="0" aria-label="Testimonials, swipe sideways">${CONFIG.testimonials.map(t=>`<figure class="shot surface"><img src="${t.img}" alt="Testimonial${t.name?' from '+t.name:''}" loading="lazy" decoding="async">${t.name?`<figcaption>${t.name}</figcaption>`:''}</figure>`).join('')}</div><div class="rail-ctl"><button type="button" data-action="rail-prev" aria-label="Previous">←</button><button type="button" data-action="rail-toggle" id="rail-toggle" aria-label="Pause moving testimonials">${icon('pause')}</button><button type="button" data-action="rail-next" aria-label="Next">→</button></div></section>`:''}
-<section class="wrap" style="padding-top:0"><div class="cta"><h2>Begin your journey with YRA today</h2><p>Foundation training and mentorship for your area of calling.</p><div class="actions"><a class="btn light" href="#register">Enrol now</a><button class="btn ghost" type="button" data-action="contact">Contact us</button></div></div></section>`,
-academies:()=>head('Our academies','Four schools, one calling: to raise young revivalists.')+`<section class="wrap"><div class="grid">${CONFIG.schools.map((s,i)=>`<article class="card"><span class="mark"></span>${s[2]?`<span class="tag">${s[2]}</span>`:''}<h3>${s[0]}</h3><p class="mute">${s[1]}</p><div class="foot"><a class="btn out sm" href="#${['forge','ministry','intercession','finance'][i]}">Learn more</a><a class="btn sm" href="#register">Enrol now</a></div></article>`).join('')}</div></section>`,
-school:n=>head(CONFIG.schools[n][0],CONFIG.schools[n][1])+`<section class="wrap"><div class="split"><div><h2>Course outline</h2>${n?'<p class="mute">Get in touch to learn what this school covers.</p><button class="btn out" type="button" data-action="contact">Ask a question</button>':`<div class="rows">${CONFIG.classes.map((c,i)=>`<div><b>${c} class</b><span class="mute">Class ${i+1}</span></div>`).join('')}</div>`}</div><div><h2>Questions answered</h2>${faqList()}</div></div><div class="actions" style="margin-top:2rem"><a class="btn" href="#register">Register for this school</a></div></section>`,
-register:()=>`<section class="wrap"><div class="split"><div><h1 style="font-size:clamp(2.4rem,5vw,4rem)">Join the academy</h1><p class="mute">Here’s what happens after you register:</p><ol class="steps"><li>We email you a link to the payment portal to pay the commitment fee.</li><li>Upload a screenshot of your payment in the portal.</li><li>Check your admission status. Yellow means we are reviewing it.</li><li>Within 24 to 48 hours you receive your matric number. Your surname is your first password.</li></ol></div><div class="formcard"><h3>Create your application</h3><form data-form="register"><label>Full name<input required autocomplete="name"></label><label>Email<input type="email" required autocomplete="email"></label><label>School<select>${CONFIG.schools.map(s=>`<option>${s[0]}</option>`).join('')}</select></label><button class="btn" type="submit">Register</button></form></div></div></section>`,
-login:()=>`<section class="wrap" style="display:grid;place-items:center"><div class="formcard"><h2 style="font-size:2.3rem">Welcome back</h2><p class="mute">Use your matric number. Your surname is your first password.</p><form data-form="login"><label>Matric number<input placeholder="YRA/FRG/0000" required autocomplete="username"></label><label>Password<input type="password" required autocomplete="current-password"></label><button class="btn" type="submit">Log in</button></form><p class="small mute" style="margin:1rem 0 0">Prototype: any details open the demo dashboard.</p></div></section>`,
-payment:()=>head('Payment portal','Pay the commitment fee, then confirm it here with a screenshot.')+`<section class="wrap"><div class="pay"><div><div class="account"><small>Pay to this account</small><b>${CONFIG.account.number}</b><div class="actions"><span>${CONFIG.account.bank}</span><button class="btn light sm" type="button" data-action="copy">Copy number</button></div></div><ol class="steps"><li>Transfer the commitment fee to the account above.</li><li>Take a screenshot of the successful payment.</li><li>Fill in the form and attach the screenshot to confirm.</li></ol></div><div class="formcard">${state.paid?'<span class="badge warn">Payment received: under review</span><h3 style="margin-top:1rem">Thank you</h3><p class="mute">We will confirm your payment within 24 to 48 hours. Track it on your dashboard.</p><a class="btn" href="#login">Go to login</a>':'<h3>Confirm your payment</h3><form data-form="payment"><label>Full name<input required autocomplete="name"></label><label>Amount paid (₦)<input type="number" min="1" inputmode="numeric" required placeholder="0"></label><label class="drop" for="shot"><span id="shot-text">Choose a payment screenshot from your gallery</span><span class="small mute">PNG or JPG</span><input id="shot" type="file" accept="image/*" required></label><button class="btn" type="submit">Confirm payment</button></form>'}</div></div></section>`,
-books:()=>head('Books &amp; Messages','Fuel for the fire: manuals that build you up and messages that stir you.')+`<section class="wrap"><div class="center"><h2>The Forge Library</h2><p class="mute">Hold the manual. Do the work.</p></div><div class="book-grid">${CONFIG.books.map(b=>`<article class="book surface"><div class="book-cover"><span>${b.title}</span><img src="${b.img}" alt="Cover of ${b.title}" loading="lazy" decoding="async">${b.was?'<em class="promo">Promo</em>':''}</div><div class="book-body"><h3>${b.title}</h3>${b.about?`<p class="mute">${b.about}</p>`:''}<div class="price">${b.now?`<span class="price-now">${b.now}</span>`:'<span class="mute">Available on Selar</span>'}${b.was?`<s class="was">${b.was}</s><span class="save">Save ${b.save}</span>`:''}</div><a class="btn" href="${b.url}" target="_blank" rel="noopener noreferrer">Buy on Selar</a></div></article>`).join('')}</div></section>
-<section class="wrap" style="padding-top:0"><div class="split"><div><h2>Messages that stay with you</h2><p class="mute">Press play on the pulpit wherever you are: on the road, at your desk, or in the quiet of your room.</p><a class="btn" href="${CONFIG.spotify}" target="_blank" rel="noopener noreferrer">${icon('spotify')}More messages on Spotify</a></div><div class="messages">${CONFIG.messages.map((m,i)=>`<a class="message surface" href="${m[2]}" target="_blank" rel="noopener noreferrer"><span class="no">0${i+1}</span>${icon('spotify','spotify')}<div><b>${m[0]}</b><small>${m[1]}</small></div><span class="cue">Listen on Spotify</span></a>`).join('')}</div></div></section>`,
-gallery:()=>head('Gallery','Moments from classes, live sessions and graduations.')+`<section class="wrap"><div class="gallery" id="gallery-grid">${CONFIG.gallery.map(g=>`<figure class="surface"><img src="${g}" alt="Academy photo" loading="lazy" decoding="async"></figure>`).join('')}</div></section>`,
-dashboard:()=>{const d=state.done,p=d*25,o=state.open,steps=state.admit?['done','done','done']:['done','now',''];return `<section class="page-head"><div class="wrap"><p class="small mute" style="margin:0">The Revivalist Forge</p><h1>Welcome back, Tolu Adeyemi</h1><p class="mute">Matric number YRA/FRG/0142.</p><span class="badge ${state.admit?'ok':'warn'}">${state.admit?'Admission verified':'Admission pending'}</span><div class="timeline"><span class="${steps[0]}">Payment uploaded</span><span class="${steps[1]}">${state.admit?'Reviewed':'Under review: 24 to 48 hours'}</span><span class="${steps[2]}">Matric number issued</span></div><p style="margin:1.2rem 0 0"><button class="btn out sm" type="button" data-action="toggle-admit">${state.admit?'Demo: set back to pending':'Demo: mark as verified'}</button></p></div></section>
-<section class="wrap"><div class="dash"><div class="card"><h3>Library access</h3>${CONFIG.classes.map((c,i)=>`<div class="module${i>d?' locked':''}"><b>${c} class</b>${i<d?'<span class="badge ok">Complete</span>':i===d?`<button class="btn sm" type="button" data-action="open-class" data-i="${i}">Open</button>`:`<span class="small">${icon('lock','lock')} Locked</span>`}</div>`).join('')}<p class="small mute" style="margin:.9rem 0 0">Pass each class’s quiz and assignment to unlock the next.</p></div>
-<div class="card" style="align-items:center;text-align:center"><h3>Graduation progress</h3><div class="ring" style="--p:${p}"><b>${p}%</b></div><p class="small mute" style="margin:.4rem 0 0">${p===100?'All four classes complete. Ready to graduate.':`Yet to graduate: ${d} of 4 classes complete.`}</p></div>
-<div class="card"><h3>Forge assessment</h3><p class="mute">Quizzes, exams and assignments you complete to graduate.</p><span class="tag">${d<4?`Next: ${CONFIG.classes[d]} class quiz`:'All quizzes passed'}</span></div>
-<div class="card"><h3>Print material</h3><div class="module"><span>Syllabus</span><button class="btn out sm" type="button" data-action="syllabus">Download</button></div></div>
-<div class="card"><h3>Live class</h3><p class="mute">Your next live session is set by your instructor.</p><button class="btn sm" type="button" data-action="live" style="align-self:flex-start">Join live class</button></div>
-<div class="card"><h3>Forge Alumni Community</h3><p class="mute">Opens when you graduate, with further mentorship from the Forge.</p><span class="tag">${p===100?'Unlocked':'Locked until graduation'}</span></div></div>
-${o!==null?`<div class="card" id="lesson" style="margin-top:1.3rem"><h3>${CONFIG.classes[o]} class</h3><div class="video"><button class="play" type="button" data-action="lesson-video" aria-label="Play lesson">${icon('play')}</button></div><h3 style="margin-top:1.4rem">Ask a question</h3><p class="mute small">Questions asked here are discussed in the live class.</p><form data-form="question" style="grid-template-columns:1fr auto"><input aria-label="Your question" placeholder="Type your question under this video" required><button class="btn sm" type="submit">Ask</button></form><p style="margin:1.2rem 0 0"><button class="btn" type="button" data-action="finish-class">Pass quiz and complete ${CONFIG.classes[o]} class</button></p></div>`:''}</section>`}};
-const routes={home:pages.home,academies:pages.academies,forge:()=>pages.school(0),ministry:()=>pages.school(1),intercession:()=>pages.school(2),finance:()=>pages.school(3),register:pages.register,login:pages.login,payment:pages.payment,books:pages.books,gallery:pages.gallery,dashboard:pages.dashboard};
-const titles={academies:'Our Academies',forge:'The Revivalist Forge',ministry:'School of Ministry',intercession:'School of Intercession',finance:'Finance Institute',register:'Register',login:'Login',payment:'Payment portal',books:'Books & Messages',gallery:'Gallery',dashboard:'Student dashboard'};
-const current=()=>{const r=location.hash.slice(1)||'home';return routes[r]?r:'home'};
-function mark(key){$$('.nav a,.tabs a').forEach(a=>{a.removeAttribute('aria-current');if(a.dataset.r===key||(['forge','ministry','intercession','finance'].includes(key)&&a.dataset.r==='academies'))a.setAttribute('aria-current','page')})}
-let railTimer,railPaused=matchMedia('(prefers-reduced-motion:reduce)').matches;
-function draw(fresh){const key=current(),app=$('#app');clearInterval(railTimer);app.innerHTML=routes[key]();document.title=(titles[key]?titles[key]+' | ':'')+'Young Revivalist Academy';mark(key);
-  if(fresh){app.classList.remove('page-in');void app.offsetWidth;app.classList.add('page-in');scrollTo({top:0,behavior:'instant'});app.focus({preventScroll:true})}
-  if($('#rail')){const rail=$('#rail');railTimer=setInterval(()=>{if(railPaused||document.hidden)return;const end=rail.scrollLeft+rail.clientWidth>=rail.scrollWidth-4;rail.scrollTo({left:end?0:rail.scrollLeft+rail.firstElementChild.offsetWidth+16,behavior:'smooth'})},4500);setRailButton()}}
-function setRailButton(){const b=$('#rail-toggle');if(b){b.innerHTML=icon(railPaused?'play':'pause');b.setAttribute('aria-label',railPaused?'Play moving testimonials':'Pause moving testimonials')}}
-/* images that fail to load disappear cleanly instead of showing broken boxes */
-document.addEventListener('error',e=>{const t=e.target;if(t.tagName!=='IMG')return;
-  if(t.classList.contains('logo')){const m=document.createElement('span');m.className='mark';t.replaceWith(m);return}
-  const box=t.closest('.shot,.gallery figure');if(box){const parent=box.parentElement;box.remove();if(!parent.children.length){if(parent.id==='rail')$('#testimonials')?.remove();else parent.innerHTML='<p class="empty">Photos are coming soon.</p>'}return}
-  if(t.closest('.portrait,.book-cover'))t.remove()},true);
-/* one place for every click */
-const BOT=[['fee','The commitment fee is set by the academy. Pay it in the Payment portal, then upload your screenshot.'],['pay','Open the Payment portal, pay to the FCMB account shown, then confirm with your screenshot.'],['status','Yellow means we are reviewing your payment. Expect your matric number in 24 to 48 hours.'],['class','Live classes are announced on your dashboard under Live class.'],['password','Your surname is your first password. You can change it after you log in.']];
-const actions={
-  contact(){$('#more-sheet').close();$('#contact-dialog').showModal()},'close-dialog'(t){t.closest('dialog')?.close()},more(){$('#more-sheet').showModal()},
-  chat(){$('#more-sheet').close();const c=$('#chat'),o=c.classList.toggle('open');$('.fab').setAttribute('aria-expanded',o);$('#chat-extra').innerHTML=CONFIG.whatsapp?`<a class="btn sm" style="margin:0 .7rem .7rem" href="${CONFIG.whatsapp}" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>`:'';if(o)$('#chat input').focus()},
-  async copy(){try{await navigator.clipboard.writeText(CONFIG.account.number);toast('Account number copied.')}catch{const r=document.createRange();r.selectNodeContents($('.account b'));getSelection().removeAllRanges();getSelection().addRange(r);toast('Number selected. Press and hold to copy.')}},
-  play(){const v=CONFIG.video,box=$('#about-video');box.innerHTML=/\.(mp4|webm|mov)$/i.test(v)?`<video src="${v}" controls autoplay playsinline></video>`:`<iframe src="${v}${v.includes('?')?'&':'?'}autoplay=1" allow="autoplay; fullscreen" allowfullscreen title="About us video"></iframe>`},
-  'rail-prev'(){railPaused=true;setRailButton();const r=$('#rail');r.scrollBy({left:-(r.firstElementChild.offsetWidth+16),behavior:'smooth'})},
-  'rail-next'(){railPaused=true;setRailButton();const r=$('#rail');r.scrollBy({left:r.firstElementChild.offsetWidth+16,behavior:'smooth'})},
-  'rail-toggle'(){railPaused=!railPaused;setRailButton()},
-  'toggle-admit'(){state.admit=!state.admit;draw()},'open-class'(t){state.open=+t.dataset.i;draw();$('#lesson').scrollIntoView({behavior:'smooth'})},
-  'finish-class'(){if(state.open===state.done)state.done++;state.open=null;draw();toast(state.done<4?`${CONFIG.classes[state.done]} class is now unlocked.`:'All four classes complete. Congratulations!')},
-  syllabus(){const txt=`Young Revivalist Academy: The Revivalist Forge syllabus\n\n${CONFIG.classes.map((c,i)=>`Class ${i+1}: ${c} class`).join('\n')}\n`,a=document.createElement('a');a.href=URL.createObjectURL(new Blob([txt],{type:'text/plain'}));a.download='YRA-syllabus.txt';a.click();toast('Syllabus downloaded.')},
-  live(){toast('No live class is running right now. Your instructor will announce the next one here.')},'lesson-video'(){toast('Your lesson video plays here.')}};
-document.addEventListener('click',e=>{const t=e.target.closest('[data-action]');if(!t||!actions[t.dataset.action])return;if(t.tagName==='BUTTON'||t.getAttribute('href')==='#')e.preventDefault();actions[t.dataset.action](t);if(t.closest('#rail,.rail-ctl'))railPaused=true});
-document.addEventListener('change',e=>{if(e.target.id==='shot'){const f=e.target.files[0];if(f)$('#shot-text').innerHTML=`<img alt="Payment screenshot preview" src="${URL.createObjectURL(f)}"><span class="small mute">${f.name.replace(/[<>&]/g,'')} · tap to change</span>`}});
-document.addEventListener('submit',e=>{const f=e.target.closest('form[data-form]');if(!f)return;e.preventDefault();const k=f.dataset.form;
-  if(k==='register'){toast('Application sent. Check your email for the payment portal link.');setTimeout(()=>location.hash='#payment',1400)}
-  if(k==='login')location.hash='#dashboard';
-  if(k==='contact'){$('#contact-dialog').close();f.reset();toast('Message sent. We will reply within a day.')}
-  if(k==='payment'){state.paid=true;state.admit=false;draw();toast('Payment received. It is now under review.')}
-  if(k==='question'){f.reset();toast('Question sent. Your instructor will answer it in live class.')}
-  if(k==='chat'){const q=f.q.value.trim();if(!q)return;const log=$('#log');log.insertAdjacentHTML('beforeend','<p class="me"></p>');log.lastChild.textContent=q;const hit=BOT.find(b=>q.toLowerCase().includes(b[0]));setTimeout(()=>{log.insertAdjacentHTML('beforeend','<p></p>');log.lastChild.textContent=hit?hit[1]:'I can’t answer that yet. Use Contact us and the team will reply.';log.scrollTop=log.scrollHeight},500);f.reset()}});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){$('#chat').classList.remove('open');$('.fab').setAttribute('aria-expanded','false')}});
-document.addEventListener('visibilitychange',()=>{});
-addEventListener('hashchange',()=>draw(true));
-$('#foot-social').innerHTML=labeled(CONFIG.social);$('#year').textContent=new Date().getFullYear();
-$('#tabs').innerHTML=[['home','Home','home'],['academies','Schools','school'],['books','Books','book']].map(([r,l,i])=>`<a data-r="${r}" href="#${r}">${icon(i)}<span>${l}</span></a>`).join('')+`<a class="primary" data-r="register" href="#register">${icon('enrol')}<span>Enrol</span></a><button type="button" data-action="more">${icon('more')}<span>More</span></button>`;
-draw(true);
-/* logo intro: plays once per visit, 5 seconds, tap to skip; the page behind it is ready and locked until it ends */
-(()=>{const sp=$('#splash');if(!sp)return;const rest=$$('.site-head,main,.site-foot,.tabs,.fab');rest.forEach(n=>n.inert=true);
-  if(innerWidth>=900)for(let i=0;i<14;i++){const e=document.createElement('i');e.className='ember';e.style.cssText=`left:${32+Math.random()*36}%;--s:${3+Math.random()*5}px;--x:${(Math.random()-.5)*160}px;--d:${1+Math.random()*3}s;--t:${2.4+Math.random()*2}s`;sp.appendChild(e)}
-  let done=false;const hide=()=>{if(done)return;done=true;try{sessionStorage.setItem('yra_seen','1')}catch{}sp.classList.add('out');rest.forEach(n=>n.inert=false);setTimeout(()=>sp.remove(),1000)};
-  const img=$('img',sp),go=()=>{sp.classList.add('go');setTimeout(hide,5000)};sp.addEventListener('click',hide);
-  if(img.complete){img.naturalWidth?go():hide()}else{img.addEventListener('load',go);img.addEventListener('error',hide)}setTimeout(hide,10000)})();
+function ic(n,c){return '<svg class="'+(c||'')+'" viewBox="0 0 24 24" aria-hidden="true"><path'+(n=='instagram'?' fill-rule="evenodd"':'')+' d="'+IC[n]+'"/></svg>'}
+var CL=['Foundational','Identity','Maturity','Ambassador'];
+var SCH=[['The Revivalist Forge','The foundation course for young people carrying revival.','Open for enrolment'],['School of Ministry','Train to serve, teach and lead in the church.',''],['School of Intercession','Learn to stand in the gap through prayer.',''],['Finance Institute','Build God’s economic system with wisdom and skill.','']];
+/* Instructor photos: put the file name as the 3rd value, e.g. ['Pastor John Victor','Founder and lead instructor','john-victor.jpg'] */
+var INST=[['Pastor John Victor','Founder and lead instructor','solution.jpeg'],['Samuel Johnson','YRA President','authority.jpeg'],['Enitan Segun Samuel','Vice President','anointed.jpeg']];
+function slide(i,x){var ini=x[0].replace(/^Pastor /,'').split(' ').slice(0,2).map(function(w){return w[0]}).join('');var im=x[2]?'<img src="'+x[2]+'" alt="Portrait of '+x[0]+'">':'<div class="ph4"><b>'+ini+'</b><span>Studio portrait goes here</span></div>';return '<article class="sl'+(i?'':' on')+'" aria-hidden="'+(i?'true':'false')+'"><div class="pic">'+im+'</div><div class="sbody"><span class="tag">'+x[1]+'</span><h3>'+x[0]+'</h3><p class="mute md">Placeholder: a short biography of '+x[0]+', their calling and their role in the academy.</p>'+isoc(i,x[0])+'</div></article>'}
+var CI=0,CT,CAR_MS=6000;
+function carShow(n){var sl=$$('.sl'),dt=$$('.cd');if(!sl.length)return;CI=(n+sl.length)%sl.length;sl.forEach(function(x,k){x.classList.toggle('on',k==CI);x.setAttribute('aria-hidden',k!=CI)});dt.forEach(function(x,k){x.classList.remove('on');if(k==CI){void x.offsetWidth;x.classList.add('on')}});clearTimeout(CT);CT=setTimeout(function(){carShow(CI+1)},CAR_MS)}
+var FAQ=[['When are the lectures?','Placeholder: add the lecture days and times.'],['How long is the class?','Placeholder: add the class duration.'],['Is there mentorship afterwards?','Yes. Graduates join the Forge Alumni Community for further mentorship.'],['How much is the commitment fee?','Placeholder: add the fee and payment options.'],['Will I be ordained? If yes, as what?','Placeholder: add the ordination details (hybrid).'],['My question isn’t here','Message us through Contact us and we will answer it.']];
+function banner(t,p){return '<section class="page"><div class="wrap"><h1>'+t+'</h1><p class="mute md" style="margin:0">'+p+'</p></div></section>'}
+/* About us video: set to a file next to this page (e.g. 'about.mp4') or a YouTube embed link (e.g. 'https://www.youtube.com/embed/VIDEO_ID') */
+var ABOUT_VIDEO='';
+var SOCIAL={facebook:'https://www.facebook.com/',instagram:'https://www.instagram.com/',youtube:'https://www.youtube.com/',telegram:'https://t.me/',tiktok:'https://www.tiktok.com/'}; /* replace with the academy's real pages */
+/* Instructor links, same order as INST. Replace with their real pages. */
+var INSOC=[{facebook:'https://www.facebook.com/',instagram:'https://www.instagram.com/',youtube:'https://www.youtube.com/',spotify:'https://open.spotify.com/'},{facebook:'https://www.facebook.com/',instagram:'https://www.instagram.com/',youtube:'https://www.youtube.com/'},{facebook:'https://www.facebook.com/',instagram:'https://www.instagram.com/',youtube:'https://www.youtube.com/'}];
+function cap(n){return n[0].toUpperCase()+n.slice(1)}
+function isoc(i,name){var s=INSOC[i];if(!s)return '';return '<div class="soc br isoc">'+['facebook','instagram','youtube','spotify'].filter(function(n){return s[n]}).map(function(n){return '<a data-n="'+n+'" href="'+s[n]+'" target="_blank" rel="noopener noreferrer" aria-label="'+name+' on '+cap(n)+'">'+ic(n)+'</a>'}).join('')+'</div>'}
+function socLbl(){return ['facebook','instagram','youtube','tiktok','telegram'].map(function(n){return '<a data-n="'+n+'" href="'+SOCIAL[n]+'" target="_blank" rel="noopener noreferrer"><span class="ib">'+ic(n)+'</span><span>'+cap(n)+'</span></a>'}).join('')}
+/* Testimonial photos: put the files next to this page and edit the names */
+var TESTI=[['testimonial1.jpg','Student name'],['testimonial2.jpg','Student name'],['testimonial3.jpg','Student name'],['testimonial4.jpg','Student name'],['testimonial5.jpg','Student name'],['testimonial6.jpg','Student name']];
+function testi(){var one=TESTI.map(function(t){return '<figure class="tc"><div class="ti"><span>Testimonial photo</span><img src="'+t[0]+'" alt="Testimonial from '+t[1]+'" loading="lazy" onerror="this.remove()"></div><figcaption>'+t[1]+'</figcaption></figure>'}).join('');return '<div class="mq"><div class="mt">'+one+one.replace(/<figure/g,'<figure aria-hidden="true"')+'</div></div>'}
+/* Books: replace each url with the book's own Selar link. Cover images: book1.jpeg, book2.jpeg */
+var SELAR='https://selar.com/';
+var BOOKS=[{t:'The Forge Discipleship Handbook',img:'book1.jpeg',url:SELAR,old:'₦7,000',now:'₦5,000',save:'₦2,000'},{t:'Hunger for Fire',img:'book2.jpeg',url:SELAR}];
+/* Messages: replace the links with the real Spotify episode links */
+var SPOTIFY_HOME='https://open.spotify.com/';
+var MSGS=[['The Secret Place','Pastor John Victor',SPOTIFY_HOME],['The Holy Spirit','Pastor John Victor',SPOTIFY_HOME],['Understanding Righteousness','Pastor John Victor',SPOTIFY_HOME]];
+var PLAY='<svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg>';
+function aboutVideo(){return '<div class="video vb" id="vid" role="group" aria-label="About us video"><button class="play" id="play" aria-label="Play about us video">'+PLAY+'</button><small>About Young Revivalist Academy</small></div>'}
+var V={
+home:function(){return '<section class="hero" id="hero"><div class="hbg" aria-hidden="true"><div class="ph"></div><i class="bk b1"></i><i class="bk b2"></i><i class="bk b3"></i><i class="bk b4"></i><i class="bk b5"></i><i class="bk b6"></i></div><div class="wrap hg"><div class="glass hc"><h1><span>Where revival is born,</span><span>purpose is found.</span></h1><p class="lead"><span class="md">Young Revivalist Academy is a place where revival is birthed, purpose is discovered and transformation is real. We are building a visible Christian nation and God’s economic system on the earth, standing in the gap.</span><span class="mo">Revival is birthed. Purpose is discovered. Transformation is real.</span></p><div class="row"><a class="btn" href="#academies">Get started</a><a class="btn out" href="#register">Register now</a></div></div></div></section>'+
+'<section class="wrap"><div class="center"><h2>About us</h2><p class="mute md">See how Young Revivalist Academy trains, mentors and sends out a generation ready to carry revival.</p></div>'+aboutVideo()+'<div class="vm"><div class="glass"><h3>Our vision</h3><p>Placeholder: the vision statement, in the client’s own words.</p></div><div class="glass"><h3>Our mission</h3><p>Placeholder: the mission statement and a short structured list of what the academy does.</p></div></div></section>'+
+'<section class="wrap" style="padding-top:0"><div class="head"><h2 style="margin:0">Our instructors and admin</h2><div class="arrows"><button id="pv" aria-label="Previous instructor">←</button><button id="nx" aria-label="Next instructor">→</button></div></div><div class="cw" aria-roledescription="carousel" aria-label="Instructors"><div class="car glass" aria-live="off">'+INST.map(function(x,i){return slide(i,x)}).join('')+'</div><div class="dots">'+INST.map(function(x,i){return '<button class="cd'+(i?'':' on')+'" data-d="'+i+'" aria-label="Show '+x[0]+'"><i></i></button>'}).join('')+'</div></div></section>'+
+'<section class="wrap" style="padding-top:0"><div class="center"><h2>Testimonials</h2><p class="mute md">Stories from students and graduates of the academy.</p></div>'+testi()+'</section>'+
+'<section class="cta"><h2>Begin your journey with YRA today</h2><p class="md">Get the foundation training and mentorship you need to make a change in your area of calling.</p><a class="btn white" href="#academies">Get started</a></section>'+
+'<section class="wrap" style="text-align:center"><h2>Questions about our schools?</h2><p class="mute md" style="margin:0 auto 1.4rem">Reach out today and we will help you choose the right one.</p><a class="btn" href="#home" id="contact">Contact us</a></section>'},
+academies:function(){return banner('Our academies','Four schools, one calling: to raise young revivalists.')+'<section class="wrap"><div class="grid">'+SCH.map(function(s,i){return '<article class="card"><span class="mark"></span>'+(s[2]?'<span class="tag">'+s[2]+'</span>':'')+'<h3>'+s[0]+'</h3><p class="mute">'+s[1]+'</p><div class="foot"><a class="btn out sm" href="'+['#forge','#ministry','#intercession','#finance'][i]+'">Learn more</a><a class="btn sm" href="#register">Enrol now</a></div></article>'}).join('')+'</div></section>'},
+forge:function(){return V.sch(0)},ministry:function(){return V.sch(1)},intercession:function(){return V.sch(2)},finance:function(){return V.sch(3)},
+sch:function(n){return banner(SCH[n][0],'Why attend: placeholder text that applies to every school in the academy.')+'<section class="wrap"><div class="split" style="align-items:start"><div><h2>Course outline</h2>'+(n?'<p class="mute">The course outline for this school will be added by the academy.</p>':'<div class="rows">'+CL.map(function(c,i){return '<div><b>'+c+' class</b><span class="mute">Class '+(i+1)+'</span></div>'}).join('')+'</div>')+'</div><div><h2>Requirements</h2><details><summary>Teachability</summary><p>Placeholder: what teachability means for a student.</p></details><details><summary>Accountability</summary><p>Placeholder: what accountability means for a student.</p></details></div></div></section><section class="wrap" style="padding-top:0"><h2>Frequently asked questions</h2>'+FAQ.map(function(q){return '<details><summary>'+q[0]+'</summary><p>'+q[1]+'</p></details>'}).join('')+'<p style="margin-top:2rem">Click Register to join if you can meet the YRA requirements.</p><a class="btn" href="#register">Register</a></section>'},
+register:function(){return '<section class="wrap"><div class="split" style="align-items:start"><div><h1 style="font-size:clamp(2.6rem,5vw,4rem)">Join the academy</h1><p class="mute">Here’s what happens after you register:</p><ol class="steps"><li>We email you a link to the payment portal to pay the commitment fee.</li><li>Upload a screenshot of your payment in the portal.</li><li>Check your admission status. Yellow means we are reviewing it.</li><li>Within 24 to 48 hours you receive your matric number. Your surname is your first password.</li></ol></div><div class="formcard"><h3>Create your application</h3><form id="rf"><label>Full name<input required autocomplete="name"></label><label>Email<input type="email" required autocomplete="email"></label><label>School<select>'+SCH.map(function(s){return '<option>'+s[0]+'</option>'}).join('')+'</select></label><button class="btn" type="submit">Register</button></form></div></div></section>'},
+login:function(){return '<section class="wrap" style="display:grid;place-items:center"><div class="formcard"><h2 style="font-size:2.3rem">Welcome back</h2><p class="mute">Use your matric number. Your surname is your first password.</p><form id="lf"><label>Matric number<input value="YRA/FRG/0142" required></label><label>Password<input type="password" value="Adeyemi" required></label><button class="btn" type="submit">Log in</button></form></div></section>'},
+payment:function(){return banner('Payment portal','Pay the commitment fee, then confirm it here with a screenshot.')+'<section class="wrap"><div class="pay"><div><div class="acct"><small>Pay to this account</small><b id="acn">7394532011</b><div class="row"><span>FCMB (First City Monument Bank)</span><button class="btn white sm" id="cp" type="button">Copy number</button></div></div><ol class="steps"><li>Transfer the commitment fee to the account above.</li><li>Take a screenshot of the successful payment.</li><li>Fill in the form and attach the screenshot to confirm.</li></ol></div><div class="formcard" id="pc">'+(S.paid?'<span class="badge y">Payment received: under review</span><h3 style="margin-top:1rem">Thank you</h3><p class="mute">We will confirm your payment within 24 to 48 hours. Track it on your dashboard.</p><a class="btn" href="#login">Go to login</a>':'<h3>Confirm your payment</h3><form id="pf"><label>Full name<input required autocomplete="name"></label><label>Amount paid (₦)<input type="number" min="1" inputmode="numeric" required placeholder="0"></label><label class="drop" for="shot"><span id="dt">Choose a payment screenshot from your gallery</span><span class="small mute">PNG or JPG</span><input id="shot" type="file" accept="image/*" required></label><button class="btn" type="submit">Confirm payment</button></form>')+'</div></div></section>'},
+books:function(){return banner('Books &amp; Messages','Fuel for the fire: manuals that build you up and messages that stir you.')+
+'<section class="wrap"><div class="center"><h2>The Forge Library</h2><p class="mute md">Hold the manual. Do the work. These books are written to take you deeper, one page at a time.</p></div><div class="bk2">'+BOOKS.map(function(b){return '<article class="bcard glass"><div class="bcov"><span>'+b.t+'</span><img src="'+b.img+'" alt="Cover of '+b.t+'" onerror="this.remove()">'+(b.old?'<em class="promo">Promo</em>':'')+'</div><div class="bbody"><h3>'+b.t+'</h3><p class="mute md">Placeholder: one or two lines about this book.</p><div class="pr">'+(b.now?'<span class="pnow">'+b.now+'</span>':'<span class="mute">Available on Selar</span>')+(b.old?'<s class="was">'+b.old+'</s><span class="save">Save '+b.save+'</span>':'')+'</div><a class="btn" href="'+b.url+'" target="_blank" rel="noopener noreferrer">Buy on Selar</a></div></article>'}).join('')+'</div></section>'+
+'<section class="wrap" style="padding-top:0"><div class="split" style="align-items:start"><div><h2>Messages that stay with you</h2><p class="mute md">Press play on the pulpit wherever you are: on the road, at your desk, or in the quiet of your room.</p><a class="btn" href="'+SPOTIFY_HOME+'" target="_blank" rel="noopener noreferrer"><span class="sbtn">'+ic('spotify')+'</span>More messages on Spotify</a></div><div class="msgs">'+MSGS.map(function(m,i){return '<a class="msg glass" href="'+m[2]+'" target="_blank" rel="noopener noreferrer"><span class="mn">0'+(i+1)+'</span><span class="si">'+ic('spotify')+'</span><span class="mi"><b>'+m[0]+'</b><small>'+m[1]+'</small></span><span class="ml">Listen on Spotify</span></a>'}).join('')+'</div></div></section>'},
+gallery:function(){return banner('Gallery','Moments from classes, live sessions and graduations.')+'<section class="wrap"><div class="grid">'+[1,2,3,4,5,6].map(function(n){return '<div class="card" style="aspect-ratio:4/3;place-items:center;display:grid"><span class="mute">Photo '+n+'</span></div>'}).join('')+'</div></section>'},
+dashboard:function(){var d=S.done,p=d*25,st=S.admit?['ok','ok','ok']:['ok','on',''],o=S.open;return '<section class="page"><div class="wrap"><p class="small mute" style="margin:0">The Revivalist Forge</p><h1>Welcome back, Tolu Adeyemi</h1><p class="mute">Matric number YRA/FRG/0142. Manage your access, routine and progress.</p>'+(S.admit?'<span class="badge g">Admission verified</span>':'<span class="badge y">Admission pending</span>')+'<div class="tl"><span class="'+st[0]+'">Payment uploaded</span><span class="'+st[1]+'">'+(S.admit?'Reviewed':'Under review: 24 to 48 hours')+'</span><span class="'+st[2]+'">Matric number issued</span></div><p style="margin:1.2rem 0 0"><button class="btn out sm" id="ta">'+(S.admit?'Demo: set back to pending':'Demo: mark as verified')+'</button></p></div></section>'+
+'<section class="wrap"><div class="dash"><div class="card"><h3>Library access</h3>'+CL.map(function(c,i){return '<div class="mod'+(i>d?' lock':'')+'"><b>'+c+' class</b>'+(i<d?'<span class="badge g">Complete</span>':i==d?'<button class="btn sm" data-open="'+i+'">Open</button>':'<span class="small">'+ic('lock','lk')+' Locked</span>')+'</div>'}).join('')+'<p class="small mute" style="margin:.9rem 0 0">Pass each class’s quiz and assignment to unlock the next.</p></div>'+
+'<div class="card" style="align-items:center;text-align:center"><h3>Graduation progress</h3><div class="ring" style="--p:'+p+'"><b>'+p+'%</b></div><p class="small mute" style="margin:.4rem 0 0">'+(p==100?'All four classes complete. Ready to graduate.':'Yet to graduate: '+d+' of 4 classes complete.')+'</p></div>'+
+'<div class="card"><h3>Forge assessment</h3><p class="mute">Quizzes, exams and assignments you complete to graduate.</p><span class="tag">'+(d<4?'Next: '+CL[d]+' class quiz':'All quizzes passed')+'</span></div>'+
+'<div class="card"><h3>Print material</h3><div class="mod"><span>Syllabus</span><button class="btn out sm" id="dlsyl">Download</button></div></div>'+
+'<div class="card"><h3>Live class</h3><p class="mute">Your next live session is set by your instructor.</p><button class="btn sm" id="jl" style="align-self:flex-start">Join live class</button></div>'+
+'<div class="card"><h3>Forge Alumni Community</h3><p class="mute">Opens when you graduate, with further mentorship from the Forge.</p><span class="tag">'+(p==100?'Unlocked':'Locked until graduation')+'</span></div></div>'+
+(o!==null?'<div class="card" id="ls" style="margin-top:1.3rem"><h3>'+CL[o]+' class</h3><div class="video" role="img" aria-label="Lesson video"><button class="play" data-msg="Your lesson video plays here." aria-label="Play lesson"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></button></div><h3 style="margin-top:1.4rem">Ask a question</h3><p class="mute small">Questions asked here are discussed in the live class.</p><form id="qf" style="grid-template-columns:1fr auto"><input aria-label="Your question" placeholder="Type your question under this video"><button class="btn sm" type="submit">Ask</button></form><p style="margin:1.2rem 0 0"><button class="btn" id="dn">Pass quiz and complete '+CL[o]+' class</button></p></div>':'')+'</section>'}};
+function skel(){return '<div class="pbar"><i style="animation-duration:'+SKELETON_MS/1000+'s"></i></div><section class="wrap skp" aria-busy="true" aria-label="Loading page"><div class="sk" style="height:22px;width:140px"></div><div class="sk" style="height:84px;width:min(720px,100%);margin-top:1.4rem"></div><div class="sk" style="height:84px;width:min(520px,80%);margin-top:.8rem"></div><div class="sk" style="height:16px;width:min(560px,90%);margin-top:1.6rem"></div><div class="sk" style="height:16px;width:min(460px,70%);margin-top:.6rem"></div><div class="sk" style="height:50px;width:180px;margin-top:1.8rem;border-radius:999px"></div><div class="skg">'+[1,2,3].map(function(){return '<div class="glass skc"><div class="sk" style="height:140px"></div><div class="sk" style="height:20px;width:70%"></div><div class="sk" style="height:14px"></div><div class="sk" style="height:14px;width:80%"></div></div>'}).join('')+'</div></section>'}
+var TITLES={academies:'Our Academies',forge:'The Revivalist Forge',ministry:'School of Ministry',intercession:'School of Intercession',finance:'Finance Institute',register:'Register',login:'Login',payment:'Payment portal',books:'Books & Messages',gallery:'Gallery',dashboard:'Student dashboard'};
+function route(){clearTimeout(T);clearTimeout(CT);$('#app').innerHTML=skel();$('#menu').classList.remove('open');window.scrollTo({top:0,behavior:'instant'});T=setTimeout(render,SKELETON_MS)}
+function render(){var r=(location.hash||'#home').slice(1);if(!V[r]||r=='sch')r='home';$('#app').innerHTML=V[r]();document.title=(TITLES[r]?TITLES[r]+' | ':'')+'Young Revivalist Academy';$('#app').focus({preventScroll:true});$$('.links a,.tabs a').forEach(function(a){a.removeAttribute('aria-current');if(a.dataset.r==r||(['forge','ministry','intercession','finance'].indexOf(r)>-1&&a.dataset.r=='academies')||(r=='dashboard'&&a.dataset.r=='login'))a.setAttribute('aria-current','page')});if(r!='dashboard')S.open=null;bind()}
+function bind(){
+$$('[data-msg]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();toast(b.dataset.msg)})});
+on('#dlsyl','click',function(){var t='Young Revivalist Academy: The Revivalist Forge syllabus\n\n'+CL.map(function(c,i){return 'Class '+(i+1)+': '+c+' class'}).join('\n')+'\n\nPlaceholder: add the full syllabus text.\n';var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([t],{type:'text/plain'}));a.download='YRA-syllabus.txt';document.body.appendChild(a);a.click();a.remove();toast('Syllabus downloaded.')});
+on('#jl','click',function(){toast('No live class is running right now. Your instructor will announce the next one here.')});
+on('#contact','click',function(e){e.preventDefault();$('#cdlg').showModal()});
+on('#play','click',function(){if(!ABOUT_VIDEO){toast('The about us video will play here.');return}$('#vid').innerHTML=/\.(mp4|webm|mov)$/i.test(ABOUT_VIDEO)?'<video src="'+ABOUT_VIDEO+'" controls autoplay playsinline></video>':'<iframe src="'+ABOUT_VIDEO+(ABOUT_VIDEO.indexOf('?')>-1?'&':'?')+'autoplay=1" allow="autoplay; fullscreen" allowfullscreen title="About us video"></iframe>'});
+var cw=$('.cw');if(cw){on('#pv','click',function(){carShow(CI-1)});on('#nx','click',function(){carShow(CI+1)});$$('.cd').forEach(function(d){d.addEventListener('click',function(){carShow(+d.dataset.d)})});cw.style.setProperty('--car',CAR_MS+'ms');var tx=0;cw.addEventListener('touchstart',function(e){tx=e.touches[0].clientX},{passive:true});cw.addEventListener('touchend',function(e){var d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>45)carShow(CI+(d<0?1:-1))},{passive:true});carShow(0)}
+on('#rf','submit',function(e){e.preventDefault();toast('Application sent. Check your email for the payment portal link.');setTimeout(function(){location.hash='#payment'},1400)});
+on('#lf','submit',function(e){e.preventDefault();location.hash='#dashboard'});
+on('#cp','click',function(){try{navigator.clipboard.writeText('7394532011')}catch(x){}toast('Account number copied.')});
+on('#shot','change',function(){var f=this.files[0];if(!f)return;$('#dt').innerHTML='<img alt="Payment screenshot preview" src="'+URL.createObjectURL(f)+'"><span class="small mute">'+f.name.replace(/</g,'')+' · tap to change</span>'});
+on('#pf','submit',function(e){e.preventDefault();S.paid=true;S.admit=false;render();toast('Payment received. It is now under review.')});
+on('#qf','submit',function(e){e.preventDefault();e.target.reset();toast('Question sent. Your instructor will answer it in live class.')});
+on('#ta','click',function(){S.admit=!S.admit;render()});
+$$('[data-open]').forEach(function(b){b.addEventListener('click',function(){S.open=+b.dataset.open;render();$('#ls').scrollIntoView({behavior:'smooth'})})});
+on('#dn','click',function(){if(S.open==S.done)S.done++;S.open=null;render();toast(S.done<4?CL[S.done]+' class is now unlocked.':'All four classes complete. Congratulations!')});
+var h=$('#hero');if(h)h.addEventListener('pointermove',function(e){var b=h.getBoundingClientRect();h.style.setProperty('--mx',(e.clientX-b.left)+'px');h.style.setProperty('--my',(e.clientY-b.top)+'px')})}
+window.addEventListener('hashchange',route);document.addEventListener('visibilitychange',function(){if(!document.hidden)carShow(CI)});
+$('#fsoc').innerHTML=socLbl();$('#yr').textContent=new Date().getFullYear();on('#fcontact','click',function(e){e.preventDefault();$('#cdlg').showModal()});
+$('#tabs').innerHTML=[['home','Home','home'],['academies','Academies','school'],['gallery','Gallery','image'],['payment','Pay','card'],['login','Login','user']].map(function(t){return '<a data-r="'+t[0]+'" href="#'+t[0]+'">'+ic(t[2])+'<span>'+t[1]+'</span></a>'}).join('');
+on('#cform','submit',function(e){e.preventDefault();$('#cdlg').close();e.target.reset();toast('Message sent. We will reply within a day.')});
+on('#cclose','click',function(){$('#cdlg').close()});
+$('#cdlg').addEventListener('click',function(e){if(e.target===this)this.close()});
+function closeMenu(){$('#menu').classList.remove('open');$('#burger').setAttribute('aria-expanded','false')}
+document.addEventListener('click',function(e){if(!e.target.closest('#menu,#burger'))closeMenu()});
+document.addEventListener('keydown',function(e){if(e.key=='Escape'){closeMenu();$('#chat').classList.remove('open');$('#fab').setAttribute('aria-expanded','false')}});
+on('#burger','click',function(){var o=$('#menu').classList.toggle('open');this.setAttribute('aria-expanded',o)});
+on('#fab','click',function(){var o=$('#chat').classList.toggle('open');this.setAttribute('aria-expanded',o);if(o)$('#ci').focus()});
+var BOT=[['fee','The commitment fee is set by the academy. Pay it in the Payment portal, then upload your screenshot.'],['pay','Open the Payment portal at the top, pay to the FCMB account shown, then confirm with your screenshot.'],['status','Yellow means we are reviewing your payment. Expect your matric number in 24 to 48 hours.'],['class','Live classes are announced on your dashboard under Live class.'],['password','Your surname is your first password. You can change it after you log in.']];
+on('#cf','submit',function(e){e.preventDefault();var q=$('#ci').value.trim();if(!q)return;var L=$('#log');L.insertAdjacentHTML('beforeend','<p class="me"></p>');L.lastChild.textContent=q;var a=BOT.find(function(b){return q.toLowerCase().indexOf(b[0])>-1});setTimeout(function(){L.insertAdjacentHTML('beforeend','<p></p>');L.lastChild.textContent=a?a[1]:'I can’t answer that yet. Use Contact us and the team will reply.';L.scrollTop=L.scrollHeight},500);e.target.reset()});
+route();
+/* cinematic logo intro: letterbox opens, logo racks into focus, light sweep, loading dots. Tap to skip. */
+(function(){var sp=$('#splash');if(!sp)return;var n=innerWidth<760?8:18;
+for(var i=0;i<n;i++){var k=document.createElement('i');k.className='sp';k.style.cssText='left:'+(32+Math.random()*36)+'%;--s:'+(3+Math.random()*5)+'px;--x:'+((Math.random()-.5)*160)+'px;--d:'+(1+Math.random()*3)+'s;--t:'+(2.4+Math.random()*2)+'s';sp.appendChild(k)}
+var im=sp.querySelector('img'),done=false;
+function hide(){if(done)return;done=true;sp.classList.add('out');setTimeout(function(){sp.remove()},1000)}
+function go(){sp.classList.add('go');setTimeout(hide,5000)}
+sp.addEventListener('click',hide);
+if(im.complete&&im.naturalWidth)go();else if(im.complete)hide();else{im.addEventListener('load',go);im.addEventListener('error',hide)}
+setTimeout(hide,10000)})();
 </script>
 </body>
 </html>
